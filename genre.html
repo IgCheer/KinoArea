@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Боевики</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240114173932">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper page-genre wrapper_registered">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="home.html" class="header__logo">
+							<img data-src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="header__socials socials">
+							<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+							<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="schedule.html" class="menu__link">Афиша</a></li>
+								<li class="menu__item"><a href="media.html" class="menu__link">Медиа</a></li>
+								<li class="menu__item"><a href="movie-card.html" class="menu__link">Фильмы</a></li>
+								<li class="menu__item"><a href="actor-card.html" class="menu__link">Актёры</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="compilations.html" class="menu__link">Подборки</a></li>
+								<li class="menu__item"><a href="genre.html" class="menu__link">Категории</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search">
+							<button type="button" class="form-search-header__icon _icon-search"></button>
+							<div class="body-main-header__search search-header">
+								<form action="#" class="search-header__form form-search-header">
+									<input autocomplete="off" type="text" name="search" placeholder="Поиск" class="form-search-header__input">
+									<a href="advanced-search.html" class="form-search-header__settings _icon-equalizer"></a>
+									<button type="submit" class="form-search-header__button _icon-search"></button>
+								</form>
+							</div>
+						</div>
+						<div class="actions-header__user user-header">
+							<select name="form[name-user]" data-class-modif="user">
+								<option value="1" selected>Евгений</option>
+								<option value="2">Иван</option>
+								<option value="3">Александр</option>
+								<option value="4">Алина</option>
+								<option value="5">Василиса</option>
+							</select>
+							<a href="profile.html" class="user-header__avatar">
+								<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/avatar.jpg" alt="Avatar"></picture>
+							</a>
+						</div>
+						<div class="actions-header__login login-actions-header">
+							<a href="#" data-popup="#popup-login" class="login-actions-header__button button button_blue">Войти</a>
+						</div>
+						<div class="menu-icon__wrapper">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_genre">
+			<div class="page__header">
+				<div class="page__container">
+					<div class="page__content">
+						<div class="page__title title">
+							<h2>Боевики</h2>
+						</div>
+						<nav class="block__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="home.html" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Боевики</span>
+								</li>
+							</ul>
+						</nav>
+						<div class="page__text">
+							<p>Также как дальнейшее развитие различных форм деятельности, в своём классическом представлении, допускает внедрение первоочередных требований. Современные технологии достигли такого уровня, что внедрение современных методик предполагает независимые способы реализации стандартных подходов. Сторонники тоталитаризма в науке могут быть объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+						</div>
+					</div>
+					<div class="page__selects selects-page goto-block">
+						<div class="selects-page__select-block">
+							<div class="selects-page__select-label">Сортировка по:</div>
+							<select name="form[]" data-class-modif="genre">
+								<option value="Kinoarea rating" selected>рейтингу Kinoarea</option>
+								<option value="IMDb rating">рейтингу IMDb</option>
+								<option value="rating of reviews">рейтингу рецензий</option>
+								<option value="film critics rating">рейтингу кинокритиков</option>
+								<option value="year">году</option>
+								<option value="original name">оригинальному названию</option>
+								<option value="monetary fees in the Russia">сборам в РФ</option>
+								<option value="monetary fees in the USA">сборам в США</option>
+								<option value="world premiere">премьере в мире</option>
+								<option value="premiere in Russia">премьере в РФ</option>
+								<option value="budget">бюджету</option>
+								<option value="number of ratings">количеству оценок</option>
+								<option value="time">времени</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="genre" class="genre__body body-genre">
+				<div class="body-genre__container">
+					<div data-page-content="genre" id="genrepage1" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/01.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Игра престолов (сериал 2011 – 2019)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Game of Thrones</a>
+									<div class="content-left-item__genre">Фэнтези, драма, боевик, мелодрама, приключения, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.80</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.30</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-2, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/02.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-2 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Место встречи изменить нельзя</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">The meeting place cannot be changed</a>
+									<div class="content-left-item__genre">Криминал, детектив, боевик, драма, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-2, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.90</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.80</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-3, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/03.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-3 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Неукротимый: Повелитель Чэньцин (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Chen qing ling</a>
+									<div class="content-left-item__genre">Фэнтези, боевик, драма, детектив, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-3, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.90</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-4, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/04.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-4 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Светлячок (сериал 2002 – 2003)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Firefly</a>
+									<div class="content-left-item__genre">Фантастика, приключения, боевик, драма, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-4, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.00</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-5, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/05.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-5 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Леон</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Léon</a>
+									<div class="content-left-item__genre">Боевик, триллер, драма, криминал, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-5, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.50</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-6, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/06.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-6 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Начало</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Inception</a>
+									<div class="content-left-item__genre">Фантастика, боевик, триллер, драма, детектив, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-6, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.80</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-7, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/07.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-7 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Последний мужик (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Lastman</a>
+									<div class="content-left-item__genre">Мультфильм, ужасы, боевик, детектив, приключения, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-7, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-1-el-8, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/08.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-1-el-8 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Братья по оружию (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Band of Brothers</a>
+									<div class="content-left-item__genre">Военный, драма, боевик, история, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-1-el-8, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.20</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.10</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage2" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-2-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/08.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-2-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Братья по оружию (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Band of Brothers</a>
+									<div class="content-left-item__genre">Военный, драма, боевик, история, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-2-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.20</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.10</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage3" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-3-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/07.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-3-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Последний мужик (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Lastman</a>
+									<div class="content-left-item__genre">Мультфильм, ужасы, боевик, детектив, приключения, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-3-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-3-el-2, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/08.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-3-el-2 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Братья по оружию (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Band of Brothers</a>
+									<div class="content-left-item__genre">Военный, драма, боевик, история, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-3-el-2, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.20</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.10</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage4" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-4-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/01.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-4-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Игра престолов (сериал 2011 – 2019)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Game of Thrones</a>
+									<div class="content-left-item__genre">Фэнтези, драма, боевик, мелодрама, приключения, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-4-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.80</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.30</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-4-el-2, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/02.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-4-el-2 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Место встречи изменить нельзя</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">The meeting place cannot be changed</a>
+									<div class="content-left-item__genre">Криминал, детектив, боевик, драма, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-4-el-2, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.90</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.80</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage5" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-5-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/03.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-5-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Неукротимый: Повелитель Чэньцин (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Chen qing ling</a>
+									<div class="content-left-item__genre">Фэнтези, боевик, драма, детектив, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-5-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.90</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage6" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-6-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/03.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-6-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Неукротимый: Повелитель Чэньцин (сериал)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Chen qing ling</a>
+									<div class="content-left-item__genre">Фэнтези, боевик, драма, детектив, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-6-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.90</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-6-el-2, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/04.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-6-el-2 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Светлячок (сериал 2002 – 2003)</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Firefly</a>
+									<div class="content-left-item__genre">Фантастика, приключения, боевик, драма, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-6-el-2, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.70</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">9.00</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-6-el-3, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/05.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-6-el-3 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Леон</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Léon</a>
+									<div class="content-left-item__genre">Боевик, триллер, драма, криминал, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-6-el-3, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.50</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+					<div data-page-content="genre" id="genrepage7" class="body-genre__items">
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-7-el-1, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/05.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-7-el-1 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Леон</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Léon</a>
+									<div class="content-left-item__genre">Боевик, триллер, драма, криминал, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-7-el-1, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.50</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+						<article class="body-genre__item item-actor-films">
+							<div class="item-actor-films__left left-item-actor-films">
+								<a href="movie-card.html" data-da=".genre-block-1-page-7-el-2, 380, 0" class="left-item-actor-films__poster">
+									<div class="left-item-actor-films__image-ibg">
+										<picture><source data-srcset="img/genre-block/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/genre-block/06.jpg" alt="Poster"></picture>
+									</div>
+								</a>
+								<div class="left-item-actor-films__content genre-block-1-page-7-el-2 content-left-item">
+									<a href="movie-card.html" class="content-left-item__title">
+										<h4>Начало</h4>
+									</a>
+									<a href="movie-card.html" class="content-left-item__title-translate">Inception</a>
+									<div class="content-left-item__genre">Фантастика, боевик, триллер, драма, детектив, ...</div>
+								</div>
+							</div>
+							<div class="item-actor-films__right right-item-actor-films">
+								<div data-da=".genre-block-1-page-7-el-2, 991.98, 4" class="right-item-actor-films__labels">
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.40</div>
+										<div class="label-item-actor-films__name">Kinoarea</div>
+									</a>
+									<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+										<div class="right-item-actor-films__label right-item-actor-films__label_max">8.80</div>
+										<div class="label-item-actor-films__name">IMDb</div>
+									</a>
+								</div>
+								<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+							</div>
+						</article>
+					</div>
+				</div>
+				<div class="pagination">
+					<ul class="pagination__body">
+						<li class="btn pagging-prev prev _icon-arrow-long-top"></li>
+						<li class="num active"><span>1</span></li>
+						<li class="num"><span>2</span></li>
+						<li class="dots"><span>...</span></li>
+						<li class="num"><span>4</span></li>
+						<li class="btn pagging-next next _icon-arrow-long-top"></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<section class="subscribe">
+				<div class="subscribe__body body-subscribe">
+					<div class="body-subscribe__logo">
+						<img data-src="img/logo2.svg" alt="Logo">
+					</div>
+					<form action="#" class="subscribe__form form-subscribe">
+						<div class="form-subscribe__content">
+							<div class="form-subscribe__title title">
+								<h3>Подпишитесь на E-mail рассылку</h3>
+							</div>
+							<div class="form-subscribe__text">
+								<p>Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите бесплатную E-mail рассылку!</p>
+							</div>
+						</div>
+						<div class="form-subscribe__request request-form-subscribe">
+							<input data-required="email" autocomplete="off" type="text" name="subscribe" data-error="Введите правильный E-mail" placeholder="Введите свой E-mail адрес" class="input form-input">
+							<button type="submit" class="request-form-subscribe__button button">Подписаться</button>
+						</div>
+						<div class="form-subscribe__privacy">
+							<div class="form__group">
+								<label for="formAgreement" class="custom-label">
+									<input checked data-required id="formAgreement" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<div>Соглашаюсь на условия <a href="#" class="privacy-link">политики конфиденциальности</a></div>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__socials socials">
+						<a href="https://vk.com/" target="_blank" class="body-footer__social _icon-vk"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="body-footer__social _icon-instagram"></a>
+						<a href="https://www.facebook.com/" target="_blank" class="body-footer__social _icon-facebook"></a>
+						<a href="https://twitter.com/i/flow/login" target="_blank" class="body-footer__social _icon-x"></a>
+					</div>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Афиша</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+								<li class="menu-footer__item"><a href="actor-card.html" class="menu-footer__link">Персоны</a></li>
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Каталог фильмов</a></li>
+								<li class="menu-footer__item"><a href="search-results.html" class="menu-footer__link">Рейтинги</a></li>
+								<li class="menu-footer__item"><a href="feedback.html" class="menu-footer__link">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__rights">2020 © Kinoarea. Все права защищены</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<button type="button" class="button-up _hide _icon-arrow-long-top"></button>
+	</div>
+	<script src="js/app.min.js?_v=20240114173932"></script>
+</body>
+
+</html>

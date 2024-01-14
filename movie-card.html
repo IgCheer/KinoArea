@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Карточка фильма</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240114173932">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper_registered">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="home.html" class="header__logo">
+							<img data-src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="header__socials socials">
+							<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+							<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="schedule.html" class="menu__link">Афиша</a></li>
+								<li class="menu__item"><a href="media.html" class="menu__link">Медиа</a></li>
+								<li class="menu__item"><a href="movie-card.html" class="menu__link">Фильмы</a></li>
+								<li class="menu__item"><a href="actor-card.html" class="menu__link">Актёры</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="compilations.html" class="menu__link">Подборки</a></li>
+								<li class="menu__item"><a href="genre.html" class="menu__link">Категории</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search">
+							<button type="button" class="form-search-header__icon _icon-search"></button>
+							<div class="body-main-header__search search-header">
+								<form action="#" class="search-header__form form-search-header">
+									<input autocomplete="off" type="text" name="search" placeholder="Поиск" class="form-search-header__input">
+									<a href="advanced-search.html" class="form-search-header__settings _icon-equalizer"></a>
+									<button type="submit" class="form-search-header__button _icon-search"></button>
+								</form>
+							</div>
+						</div>
+						<div class="actions-header__user user-header">
+							<select name="form[name-user]" data-class-modif="user">
+								<option value="1" selected>Евгений</option>
+								<option value="2">Иван</option>
+								<option value="3">Александр</option>
+								<option value="4">Алина</option>
+								<option value="5">Василиса</option>
+							</select>
+							<a href="profile.html" class="user-header__avatar">
+								<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/avatar.jpg" alt="Avatar"></picture>
+							</a>
+						</div>
+						<div class="actions-header__login login-actions-header">
+							<a href="#" data-popup="#popup-login" class="login-actions-header__button button button_blue">Войти</a>
+						</div>
+						<div class="menu-icon__wrapper">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_movie-card">
+			<section class="movie-card__main main-movie-card">
+				<picture><source data-srcset="img/movie-card/fone.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  class="main-movie-card__fone" data-src="img/movie-card/fone.png" alt="fone"></picture>
+				<div class="main-movie-card__container">
+					<div class="main-movie-card__top top-main-movie-card">
+						<div class="top-main-movie-card__poster">
+							<div data-da=".poster-for-mobile,767.98" class="top-main-movie-card__image-ibg">
+								<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+							</div>
+						</div>
+						<div class="top-main-movie-card__content content-top-main">
+							<nav class="block__breadcrumbs breadcrumbs">
+								<ul class="breadcrumbs__list">
+									<li class="breadcrumbs__item">
+										<a href="home.html" class="breadcrumbs__link">Главная</a>
+									</li>
+									<li class="breadcrumbs__item">
+										<a href="home.html" class="breadcrumbs__link">Фильмы</a>
+									</li>
+									<li class="breadcrumbs__item">
+										<span class="breadcrumbs__current">Побег из Претории</span>
+									</li>
+								</ul>
+							</nav>
+							<div class="content-top-main__body body-content-top-main">
+								<div class="body-content-top-main__title title">
+									<h2>Побег из Претории</h2>
+								</div>
+								<div class="body-content-top-main__title-translation">Escape from Pretoria</div>
+								<div class="poster-for-mobile"></div>
+								<div class="body-content-top-main__charts">
+									<a href="#" class="body-content-top-main__chart body-content-top-main__chart_kinoarea">8.70
+										<div class="chart-decor">
+											<img data-src="img/charts-decors/decor-8.svg" alt="Decor">
+										</div>
+									</a>
+									<a href="#" class="body-content-top-main__chart body-content-top-main__chart_IMDb">6.70
+										<div class="chart-decor">
+											<img data-src="img/charts-decors/decor-6.svg" alt="Decor">
+										</div>
+									</a>
+								</div>
+								<div class="body-content-top-main__desc">
+									<p>Двое борцов за свободу отбывают срок в одной из самых строгих тюрем мира — в «Претории». Вместе с другими узниками они планируют дерзкий и опасный побег. Но придумать план — это только первый шаг. Шаг второй — реализация плана.</p>
+								</div>
+								<div class="body-content-top-main__footer footer-body-content-top-main">
+									<a href="media.html" class="footer-body-content-top-main__button button button_border _icon-play">Смотреть трейлер</a>
+									<div class="footer-body-content-top-main__socials socials">
+										<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+										<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+										<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+										<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main-movie-card__actions actions-main-movie-card">
+						<div class="actions-main-movie-card__rating rating rating_set">
+							<div class="rating__body">
+								<div class="rating__active"></div>
+								<div class="rating__items">
+									<input type="radio" class="rating__item" value="1" name="rating">
+									<input type="radio" class="rating__item" value="2" name="rating">
+									<input type="radio" class="rating__item" value="3" name="rating">
+									<input type="radio" class="rating__item" value="4" name="rating">
+									<input type="radio" class="rating__item" value="5" name="rating">
+									<input type="radio" class="rating__item" value="6" name="rating">
+									<input type="radio" class="rating__item" value="7" name="rating">
+									<input type="radio" class="rating__item" value="8" name="rating">
+									<input type="radio" class="rating__item" value="9" name="rating">
+									<input type="radio" class="rating__item" value="10" name="rating">
+								</div>
+							</div>
+							<div class="rating__value">7.6</div>
+						</div>
+						<div class="actions-main-movie-card__heart-block">
+							<button type="button" class="actions-main-movie-card__heart favourite-item _icon-heart"></button>
+							<div class="actions-main-movie-card__heart-caption">В избранном у 37934 человек</div>
+						</div>
+					</div>
+					<div class="main-movie-card__info info-main-movie-card">
+						<div class="info-main-movie-card__columns">
+							<div class="info-main-movie-card__column column-info-movie-card">
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Год:</div>
+									<div class="column-info-movie-card__value">2020</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Страна:</div>
+									<div class="column-info-movie-card__value">Великобритания, Австралия</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Слоган:</div>
+									<div class="column-info-movie-card__value column-info-movie-card__value_not-underline">«Подбери ключ к свободе»</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Режиссер:</div>
+									<div class="column-info-movie-card__value">Фрэнсис Аннан</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Сценарий:</div>
+									<div class="column-info-movie-card__value">Фрэнсис Аннан, Л.Х. Адамс, Кэрол Гриффитс, ...</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Продюсер:</div>
+									<div class="column-info-movie-card__value">Дэвид Баррон, Марк Блэйни, Гари Хэмилтон, ...</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Оператор:</div>
+									<div class="column-info-movie-card__value">Джеффри Холл</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Композитор:</div>
+									<div class="column-info-movie-card__value">Дэвид Хиршфелдер</div>
+								</div>
+							</div>
+							<div class="info-main-movie-card__column">
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Художник:</div>
+									<div class="column-info-movie-card__value">Скотт Бёрд, Эрика Брайан, Мариот Керр, ...</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Монтаж:</div>
+									<div class="column-info-movie-card__value">Ник Фентон</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Жанр:</div>
+									<div class="column-info-movie-card__value">Триллер, ...</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Сборы в мире:</div>
+									<div class="column-info-movie-card__value column-info-movie-card__value_not-underline">$12 808</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Премьера (мир):</div>
+									<div class="column-info-movie-card__value">1 марта 2020</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Премьера (РФ):</div>
+									<div class="column-info-movie-card__value">14 мая 2020</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Возраст:</div>
+									<div class="column-info-movie-card__value column-info-movie-card__value_not-underline">16+</div>
+								</div>
+								<div class="column-info-movie-card__line">
+									<div class="column-info-movie-card__name">Время:</div>
+									<div class="column-info-movie-card__value column-info-movie-card__value_not-underline"> 106 мин. / 01:46</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="production-info">
+				<div class="production-info__container">
+					<div class="production-info__top top-production-info">
+						<div class="top-production-info__left left-production-info">
+							<article class="left-production-info__item item-production">
+								<div class="item-production__photo">
+									<div class="item-production__image-ibg">
+										<picture><source data-srcset="img/movie-card/production-info/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/production-info/01.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<div class="item-production__content content-item-production">
+									<div class="content-item-production__name">Фрэнсис Аннан</div>
+									<div class="content-item-production__name-translate">Francis Annan</div>
+									<div class="content-item-production__post">Режисёр</div>
+								</div>
+							</article>
+							<article class="left-production-info__item item-production">
+								<div class="item-production__photo">
+									<div class="item-production__image-ibg">
+										<picture><source data-srcset="img/movie-card/production-info/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/production-info/01.jpg" alt="Image"></picture>
+									</div>
+								</div>
+								<div class="item-production__content content-item-production">
+									<div class="content-item-production__name">Фрэнсис Аннан</div>
+									<div class="content-item-production__name-translate">Francis Annan</div>
+									<div class="content-item-production__post">Режисёр</div>
+								</div>
+							</article>
+						</div>
+						<div class="top-production-info__right right-production-info">
+							<div class="right-production-info__item item-right-production">
+								<div class="item-right-production__title">Производство:</div>
+								<ol class="item-right-production__content">
+									<li class="item-right-production__elem">Arclight Films</li>
+									<li class="item-right-production__elem">Beagle Pug Films</li>
+									<li class="item-right-production__elem">Footprint Films</li>
+								</ol>
+							</div>
+							<div class="right-production-info__item item-right-production">
+								<div class="item-right-production__title">Спецэффекты:</div>
+								<ol class="item-right-production__content">
+									<li class="item-right-production__elem">Particular Crowd</li>
+									<li class="item-right-production__elem">Premiere Picture</li>
+									<li class="item-right-production__elem">Spier Films</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+					<div class="production-info__bottom bottom-production-info">
+						<div class="bottom-production-info__item item-bottom-production">
+							<div class="item-bottom-production__title">Студия дубляжа:</div>
+							<ol class="item-bottom-production__content">
+								<li class="item-bottom-production__elem">Пифагор</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="starring">
+				<div class="starring__container">
+					<div class="starring__block-header block-header">
+						<div class="block-header__title">
+							<h2>В главных ролях:</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="#" class="content-block-header__all _icon-arrow-right all">Все актёры</a>
+						</div>
+					</div>
+					<div class="starring__body body-starring">
+						<div class="body-starring__items">
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/01.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Дэниэл Рэдклифф</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Daniel Radcliffe</a>
+									<div class="content-item-starring__role">Тим Дженкин</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/02.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Даниэль Уэббер</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Daniel Webber</a>
+									<div class="content-item-starring__role">Стивен Ли</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/03.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Иэн Харт</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Ian Hart</a>
+									<div class="content-item-starring__role">Денис Гольдберг</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/04.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Марк Леонард Винтер</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Mark Leonard Winter</a>
+									<div class="content-item-starring__role">Леонард Фонтейн</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/05.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Нэйтан Пейдж</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Nathan Page</a>
+									<div class="content-item-starring__role">Монго</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/06.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Ратидзо Мамбо</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Ratidzo Mambo</a>
+									<div class="content-item-starring__role">Женщина</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/07.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Жанетт Кронин</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Jeanette Cronin</a>
+									<div class="content-item-starring__role">Ещё женщина</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/08.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Адам Туоминен</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Adam Tuominen</a>
+									<div class="content-item-starring__role">Джереми Кронин</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/09.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Адам Овадия</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Adam Ovadia</a>
+									<div class="content-item-starring__role">Ван Задельхофф</div>
+								</div>
+							</article>
+							<article class="body-starring__item item-starring">
+								<a href="actor-card.html" class="item-starring__photo">
+									<div class="item-starring__image-ibg">
+										<picture><source data-srcset="img/movie-card/starring/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/starring/10.jpg" alt="Image"></picture>
+									</div>
+								</a>
+								<div class="item-starring__content content-item-starring">
+									<a href="actor-card.html" class="content-item-starring__name">Стивен Хантер</a>
+									<a href="actor-card.html" class="content-item-starring__name-translate">Stephen Hunter</a>
+									<div class="content-item-starring__role">Мужчина</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="movie-card__menu menu-movie-card">
+				<div class="menu-movie-card__container">
+					<nav class="menu-movie-card__body">
+						<ul class="menu-movie-card__list">
+							<li class="menu-movie-card__item"><a href="#" data-goto=".movie-card__main" data-goto-header class="menu-movie-card__link">Премьеры</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".trailers-movie-card" data-goto-header class="menu-movie-card__link">Трейлеры</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".reviews" data-goto-header class="menu-movie-card__link">Рецензии</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".production-info" data-goto-header class="menu-movie-card__link">Студии</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".quotes-movie-card" data-goto-header class="menu-movie-card__link">Цитаты</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".sequels" data-goto-header class="menu-movie-card__link">Сиквелы и приквелы</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".posters" data-goto-header class="menu-movie-card__link">Постеры</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".frames" data-goto-header class="menu-movie-card__link">Кадры</a></li>
+							<li class="menu-movie-card__item"><a href="#" data-goto=".awards" data-goto-header class="menu-movie-card__link">Награды</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<section class="trailers-movie-card">
+				<div class="trailers-movie-card__container">
+					<div class="trailers-movie-card__block-header block-header">
+						<div class="block-header__title">
+							<h2>Трейлеры фильма</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="media.html" class="content-block-header__all _icon-arrow-right all">Все трейлеры</a>
+						</div>
+					</div>
+					<div class="content-trailers__block block-content-trailers">
+						<div class="video-about__video-ibg">
+							<div class="video-about__video-inner">
+								<picture>
+									<source srcset="img/movie-card/trailers-movie-card/01.jpg" type="image/webp">
+									<img class="video-about__video-content" data-src="img/movie-card/trailers-movie-card/01.jpg" alt="Картинка">
+								</picture>
+								<button data-video-id="7cl5x78F6-E" class="video-about__video-button">
+									<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+										<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="slide-content-trailers__bottom slide-trailers-bottom">
+							<div class="slide-trailers-bottom__title-block">
+								<div class="slide-trailers-bottom__title title">
+									<h4>Побег из Претории</h4>
+								</div>
+								<div class="slide-trailers-bottom__socials socials">
+									<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+									<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+									<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+									<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+								</div>
+							</div>
+							<div class="slide-trailers-bottom__ratings rating-item">
+								<div class="rating-item__like item-action">
+									<button type="button" class="item-like _icon-like"></button>
+									<div class="rating-item__quantity">
+										<span>426</span>
+									</div>
+								</div>
+								<div class="rating-item__dislike">
+									<button type="button" class="item-like _icon-like item-action"></button>
+									<div class="rating-item__quantity">
+										<span>74</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="awards">
+				<div class="awards__container">
+					<div class="awards__block-header block-header">
+						<div class="block-header__title">
+							<h2>Награды</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="#" class="content-block-header__all _icon-arrow-right all">Все награды</a>
+						</div>
+					</div>
+					<div class="awards__body body-awards">
+						<div class="body-awards__items">
+							<article class="body-awards__item item-body-awards">
+								<div class="item-body-awards__image">
+									<picture><source data-srcset="img/movie-card/awards/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/awards/01.png" alt="Image"></picture>
+								</div>
+								<div class="item-body-awards__content content-item-awards">
+									<div class="content-item-awards__title">
+										<h5>Оскар</h5>
+									</div>
+									<div class="content-item-awards__desc">Лучшая мужская роль </div>
+									<div class="content-item-awards__year">2020</div>
+								</div>
+							</article>
+							<article class="body-awards__item item-body-awards">
+								<div class="item-body-awards__image">
+									<picture><source data-srcset="img/movie-card/awards/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/awards/02.png" alt="Image"></picture>
+								</div>
+								<div class="item-body-awards__content content-item-awards">
+									<div class="content-item-awards__title">
+										<h5>Оскар</h5>
+									</div>
+									<div class="content-item-awards__desc">Лучшая мужская роль </div>
+									<div class="content-item-awards__year">2020</div>
+								</div>
+							</article>
+							<article class="body-awards__item item-body-awards">
+								<div class="item-body-awards__image">
+									<picture><source data-srcset="img/movie-card/awards/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/awards/03.png" alt="Image"></picture>
+								</div>
+								<div class="item-body-awards__content content-item-awards">
+									<div class="content-item-awards__title">
+										<h5>Оскар</h5>
+									</div>
+									<div class="content-item-awards__desc">Лучшая мужская роль </div>
+									<div class="content-item-awards__year">2020</div>
+								</div>
+							</article>
+							<article class="body-awards__item item-body-awards">
+								<div class="item-body-awards__image">
+									<picture><source data-srcset="img/movie-card/awards/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/awards/04.png" alt="Image"></picture>
+								</div>
+								<div class="item-body-awards__content content-item-awards">
+									<div class="content-item-awards__title">
+										<h5>Оскар</h5>
+									</div>
+									<div class="content-item-awards__desc">Лучшая мужская роль </div>
+									<div class="content-item-awards__year">2020</div>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="posters">
+				<div class="posters__container">
+					<div class="posters__block-header block-header">
+						<div class="block-header__title">
+							<h2>Постеры к фильму</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="#" class="content-block-header__all _icon-arrow-right all">Все постеры</a>
+						</div>
+					</div>
+					<div class="posters__body body-posters">
+						<div class="body-posters__title title-in-body">
+							<h5>Побег из Претории</h5>
+						</div>
+						<div data-gallery class="body-posters__items">
+							<a class="body-posters__item" href="img/movie-card/posters/01.jpg"><picture><source srcset="img/movie-card/posters/01.webp" type="image/webp"><img src="img/movie-card/posters/01.jpg" alt="Image"></picture></a>
+							<a class="body-posters__item" href="img/movie-card/posters/02.jpg"><picture><source srcset="img/movie-card/posters/02.webp" type="image/webp"><img src="img/movie-card/posters/02.jpg" alt="Image"></picture></a>
+							<a class="body-posters__item" href="img/movie-card/posters/03.jpg"><picture><source srcset="img/movie-card/posters/03.webp" type="image/webp"><img src="img/movie-card/posters/03.jpg" alt="Image"></picture></a>
+							<a class="body-posters__item" href="img/movie-card/posters/01.jpg"><picture><source srcset="img/movie-card/posters/01.webp" type="image/webp"><img src="img/movie-card/posters/01.jpg" alt="Image"></picture></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="frames">
+				<div class="frames__container">
+					<div class="frames__block-header block-header">
+						<div class="block-header__title">
+							<h2>Кадры из фильма</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="#" class="content-block-header__all _icon-arrow-right all">Все кадры</a>
+						</div>
+					</div>
+					<div class="frames__body body-frames">
+						<div class="body-frames__title title-in-body">
+							<h5>Побег из Претории</h5>
+						</div>
+						<div data-gallery class="body-frames__items">
+							<a href="img/movie-card/frames/01.jpg" class="body-frames__item body-frames__item_big"><picture><source srcset="img/movie-card/frames/01.webp" type="image/webp"><img src="img/movie-card/frames/01.jpg" alt="В наручниках"></picture></a>
+							<a href="img/movie-card/frames/02.jpg" class="body-frames__item"><picture><source srcset="img/movie-card/frames/02.webp" type="image/webp"><img src="img/movie-card/frames/02.jpg" alt="Смотрят вверх"></picture></a>
+							<a href="img/movie-card/frames/03.jpg" class="body-frames__item"><picture><source srcset="img/movie-card/frames/03.webp" type="image/webp"><img src="img/movie-card/frames/03.jpg" alt="В очках"></picture></a>
+							<a href="img/movie-card/frames/04.jpg" class="body-frames__item"><picture><source srcset="img/movie-card/frames/04.webp" type="image/webp"><img src="img/movie-card/frames/04.jpg" alt="В майке"></picture></a>
+							<a href="img/movie-card/frames/05.jpg" class="body-frames__item"><picture><source srcset="img/movie-card/frames/05.webp" type="image/webp"><img src="img/movie-card/frames/05.jpg" alt="С другом"></picture></a>
+							<a href="img/movie-card/frames/06.jpg" class="body-frames__item body-frames__item_big"><picture><source srcset="img/movie-card/frames/06.webp" type="image/webp"><img src="img/movie-card/frames/06.jpg" alt="На кровати"></picture></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="sequels">
+				<div class="sequels__container">
+					<div class="sequels__block-header block-header block-header_center">
+						<div class="block-header__title">
+							<h2>Сиквелы и приквелы</h2>
+						</div>
+					</div>
+					<div class="sequels__body body-sequels">
+						<!-- Оболочка слайдера -->
+						<div class="body-sequels__slider swiper">
+							<!-- Движущаяся часть слайдера -->
+							<div class="body-sequels__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="body-sequels__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label-caption">Сиквел</div>
+											<div class="card-film__label">7.80</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>История игрушек 4</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Мультфильм, фэнтези, комедия, приключения ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-sequels__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label-caption">Сиквел</div>
+											<div class="card-film__label">8.50</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Джокер</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Триллер, драма, криминал</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-sequels__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label-caption">Сиквел</div>
+											<div class="card-film__label">7.10</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Солнцестояние</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Ужасы, триллер, драма</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-sequels__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label-caption">Сиквел</div>
+											<div class="card-film__label">7.70</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Однажды в… Голливуде</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, комедия</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-sequels__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label-caption">Сиквел</div>
+											<div class="card-film__label">6.70</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Прощай</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, триллер</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="control-body-popular-films controls-sliders">
+								<!-- <div class="control-body-popular-films__fraction fraction-controll">
+										<span class="fraction-controll__current"></span>/<span class="fraction-controll__all"></span>
+									</div> -->
+								<div class="swiper-pagination"></div>
+								<!-- Если требуется навигация (слева / справа) -->
+								<div class="control__buttons">
+									<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+									<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="quotes-movie-card">
+				<div class="quotes-movie-card__container">
+					<div class="quotes__block-header block-header">
+						<div class="block-header__title">
+							<h2>Цитаты из фильма</h2>
+						</div>
+					</div>
+					<div class="quotes-movie-card__body body-quotes-movie-card">
+						<div class="body-quotes-movie-card__items">
+							<div class="body-quotes-movie-card__item item-body-quotes">
+								<div class="item-body-quotes__decor">
+									<picture><source data-srcset="img/movie-card/quotes/quotes.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/quotes/quotes.png" alt="Decor"></picture>
+								</div>
+								<blockquote class="item-body-quotes__text-quote">
+									<p>
+										Принимая во внимание показатели успешности, высококачественный прототип будущего проекта не оставляет шанса для своевременного выполнения сверхзадачи. Равным образом, дальнейшее развитие различных форм деятельности играет определяющее значение для благоприятных перспектив!
+									</p>
+									<cite class="item-body-quotes__author">Слова отца</cite>
+								</blockquote>
+							</div>
+							<div class="body-quotes-movie-card__item item-body-quotes">
+								<div class="item-body-quotes__decor">
+									<picture><source data-srcset="img/movie-card/quotes/quotes.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/quotes/quotes.png" alt="Decor"></picture>
+								</div>
+								<blockquote class="item-body-quotes__text-quote">
+									<p>
+										Мы вынуждены отталкиваться от того, что постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает актуальность форм воздействия. Приятно, граждане, наблюдать, как непосредственные участники технического прогресса представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть функционально разнесены на независимые элементы. Господа, понимание сути ресурсосберегающих технологий создаёт предпосылки для приоритизации разума над эмоциями. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут преданы социально-демократической анафеме.
+									</p>
+									<cite class="item-body-quotes__author">Слова странного человека</cite>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="similar">
+				<div class="similar__container">
+					<div class="similar__block-header block-header block-header_center">
+						<div class="block-header__title">
+							<h2>Похожие фильмы</h2>
+						</div>
+					</div>
+					<div class="similar__body body-similar">
+						<!-- Оболочка слайдера -->
+						<div class="body-similar__slider swiper">
+							<!-- Движущаяся часть слайдера -->
+							<div class="body-similar__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="body-similar__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">8.20</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/movie-card/similar/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/similar/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гарри Поттер и философский камень</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, приключения, семейный, ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-similar__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">8.00</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/movie-card/similar/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/similar/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гарри Поттер и Тайная комната</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, приключения, семейный, ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-similar__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">8.10</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/movie-card/similar/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/similar/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гарри Поттер и узник Азкабана</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, приключения, семейный, ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-similar__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">7.80</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/movie-card/similar/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/similar/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гарри Поттер и Кубок огня</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, приключения, семейный, ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-similar__slide swiper-slide">
+									<article class="body-hero__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">8.20</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/movie-card/similar/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/similar/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гарри Поттер и философский камень</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, приключения, семейный, ...</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+							<div class="control-body-similar controls-sliders">
+								<!-- <div class="control-body-popular-films__fraction fraction-controll">
+										<span class="fraction-controll__current"></span>/<span class="fraction-controll__all"></span>
+									</div> -->
+								<div class="swiper-pagination"></div>
+								<!-- Если требуется навигация (слева / справа) -->
+								<div class="control__buttons">
+									<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+									<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__block-header block-header">
+						<div class="block-header__title">
+							<h2>Рецензии к фильму</h2>
+						</div>
+						<div class="block-header__content">
+							<button data-goto=".review-form" data-goto-header data-ripple type="button" class="block-header__button button button_blue">Добавить рецензию</button>
+						</div>
+					</div>
+					<div class="reviews__body body-reviews">
+						<div data-tabs class="body-reviews-tabs">
+							<nav data-tabs-titles class="body-reviews-tabs__navigation">
+								<button type="button" class="body-reviews-tabs__title body-reviews-tabs__title_all _tab-active">
+									Все
+									<div class="body-reviews-tabs__title-quantity">36</div>
+								</button>
+								<button type="button" class="body-reviews-tabs__title body-reviews-tabs__title_positive">
+									Положительные
+									<div class="body-reviews-tabs__title-quantity">28</div>
+								</button>
+								<button type="button" class="body-reviews-tabs__title body-reviews-tabs__title_negative">
+									Отрицательные
+									<div class="body-reviews-tabs__title-quantity">3</div>
+								</button>
+								<button type="button" class="body-reviews-tabs__title body-reviews-tabs__title_neutral">
+									Нейтральные
+									<div class="body-reviews-tabs__title-quantity">5</div>
+								</button>
+								<button type="button" class="body-reviews-tabs__title body-reviews-tabs__title_percent">
+									Процент
+									<div class="body-reviews-tabs__title-quantity">87%</div>
+								</button>
+							</nav>
+							<div data-tabs-body class="body-reviews-tabs__content">
+								<div class="body-reviews-tabs__body">
+									<!-- Оболочка слайдера -->
+									<div class="all-reviews__slider swiper">
+										<!-- Движущаяся часть слайдера -->
+										<div class="all-reviews__wrapper reviews-wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="all-reviews__slide review swiper-slide">
+												<article class="review__item review__item_positive item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Lerata</a>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_1, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(113)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>2</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_1"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>На пути к цели</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">14 апреля 2020 | 09:59</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Честно скажу, я раньше не особо задумывалась о таком понятии, как апартеид. Он казался чем-то старым, давно ушедшим в небытие и не заслуживающим внимания современного человека, однако хочу признаться, что просмотр фильма «Побег из Претории» заставил меня пересмотреть многие вещи. Сюжет основан на вполне реальных событиях, описанных в книге одного из участников тех жутких событий, и я считаю, что зрителям будет не лишним ознакомиться с тем, что творилось в ЮАР посредством настоящей приключенческой драмы, в которой правды куда больше, чем вымысла.
+															</p>
+															<p>
+																Развитие событий происходит в 1979 году, когда апартеид в ЮАР находится на пике своего могущества. Но с подобной политикой дискриминации по расовому признаку согласны совсем не все. Даже многие белые люди не могут воспринимать адекватно политику властей. Среди таких революционеров оказываются Тим Дженкин и Стивен Ли. Молодые люди не были готовы к открытому оружейному противостоянию и считали, что могут принести гораздо больше пользы раздавая листовки.
+															</p>
+															<p>
+																Но власть не дремлет, полиция пристально следит за нарушителями спокойствия вне зависимости от цвета кожи. Даже если ты белый — это ничего не значит. И вот нашим бравым революционерам приходится отправиться в Преторию, страшную тюрьму, откуда можно выйти только при большом везении или помиловании главы государства. Понятное дело, что Дженкин и Ли на подобное рассчитывать не могут и им приходится обдумать план побега.
+															</p>
+															<p>
+																Что мне в этом фильме понравилось, так это то, что авторы не слишком сильно нагнетают драму. Они, конечно, показывают все несправедливость апартеида и как много без он принес темнокожему населению, но это скорее фильм о том, как переломить суть событий, изменить себя и окружающих, добиться правды и воли даже тогда, когда на тебя наставлено дуло пистолета.
+															</p>
+															<p>
+																Дэниэл Рэдклифф открылся для меня с неожиданно позитивной стороны. В последние пару лет он играет в каких-то очень странных проектах. Например, «Пушки Акимбо», «Человек- швейцарский нож». На каждый такой проект находятся свои любители, но, например, мне интересней видеть Рэдклиффа в образе нормального, простого человека. А когда он еще и бежит из тюрьмы, словно какой-нибудь Вентворт Миллер, тогда это просто шикарно. Во многом мое внимание к фильмы приковал именно Дэниэл, который совсем не подвел и очень даже порадовал.
+															</p>
+															<p>
+																«Побег из Претории» стоит посмотреть зрителям, плохо знакомым с историей апартеида. Я выделила для себя немало интересной информации, которая осела в моей памяти надолго. И даже если вы большие знатоки того, что происходило в ЮАР, это все равно не помешает вам получить удовольствие от просмотра фильм о побеге с отличной игрой Дэниэла Рэдклиффа.
+															</p>
+															<p>
+																8 из 10
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="all-reviews__slide review swiper-slide">
+												<article class="review__item review__item_neutral item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Симон</a>
+																	<div class="top-content-user-review__type">Нейтральная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_2, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="#" class="bottom-content-user-review__link">Рецензии<span>(684)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="#" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="#" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="#" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="#" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>17</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>18</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_2"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>«Зэка Васильев и Петров-зэка»</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																- Ипполит Георгиевич, о чем вы думаете?
+																- Я не собираюсь перед вами отчитываться.
+																- У вас на лице написано, что обо мне.
+																- Да, о вас, искатель приключений. Для вас нет ничего святого. Такие, как вы, всюду суют свой нос. Верят не в разум, а в порыв. Вы неуправляемы! Для вас главное не разум, а чувство, импульс. Вы угроза для общества.
+																- Весьма лестный отзыв.
+																- А вы о чем думаете?
+																- О горячем чае.
+																- Ну, о горячем чае я тоже думаю. Но все-таки, откровенность за откровенность…
+															</p>
+															<p>
+																«Ирония судьбы или с лёгким паром», 1975, реж. Э. Рязанов
+															</p>
+															<p>
+																Декабрьский диалог персонажей А. Мягкова и Ю. Яковлева в новогоднюю ночь, у крыльца ленинградской высотки, известен каждому. Два совершенно разных по темпераменту человека и думают о разном. Хотя что им остаётся? Зима, мороз, темень. Оба выставлены за дверь. Страсти отчаяния кипят в обоих. Москвич на алкоголизм пеняет себе самому, без пяти минут супруг, ревностью обуреваем. Как оно там дальше сложится, ещё не известно никому. И думы, думы, думы в мимике лиц в молчании.
+															</p>
+															<p>
+																Но да ладно, с ними, отечественный классик более-менее ситуацию «разрулил». Давно «разрулил». Меж себя они всё решили. И Галя «при своих». И Надя не в накладе. Зачёт.
+															</p>
+															<p>
+																А о чём думают, волей обстоятельств, тюрьмой «награждённые»? В бетонном каземате оказавшиеся. Разве диалог советской мелодрамы не может быть здесь озвучен? На мой взгляд, он весьма обтекаемый и универсальный. Вложи в любые уста, перелицуй на иную ситуацию, актуальности не потеряет. Верно? Упрёк фехтующего, блок в отражении противником. Легко и просто нападение провалено. Продолжим? Нападайте-нападайте.
+															</p>
+
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="all-reviews__slide review swiper-slide">
+												<article class="review__item review__item_negative item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar user-item-review__avatar_without _icon-user"></a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">mariinna2017</a>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_3, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(53)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>29</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike item-action">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>37</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_3"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Гарри Поттер против апартеида.</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">3 апреля 2020 | 22:00</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Действие фильма происходит в ЮАР, в семидесятые годы двадцатого века, в годы безраздельного господства белых, названного апартеидом. Начало фильма наглядно демонстрирует нам прелести системы: белые полицейские прививают чернокожим любовь и уважение с помощью дубинок и слезоточивого газа. Апартеид проявлялся не только в подавлении любого сопротивления, но и в запрете осуществлять гражданские права для чернокожих. Чернокожие составляли большинство населения, и при этом, они не могли получать образование, медицинское обслуживание, участвовать в выборах, и даже выходить на улицу в тёмное время суток, видимо для того, чтобы не отсвечивали в темноте.
+															</p>
+															<p>
+																Апартеид был осуждён всем прогрессивным человечеством, что не мешало властям неуклонно осуществлять его и дальше. Южноафриканские борцы за свободу создали АНК, по образцу индийского ИНК, но использовали отнюдь не мирные формы протеста. Один из лидеров АНК, некий Мандела, был осуждён за терроризм, а впоследствии был награждён премией мира за те же самые деяния. Чудны дела твои…
+															</p>
+															<p>
+																Из этого фильма я с удивлением узнала, что борьбу с апартеидом вели не только чернокожие. Главные герои фильма — белые члены АНК, распространившие листовки с призывом уничтожить режим апартеида. Южноафриканское законодательство было гуманным, и за столь тяжкое преступление, мерзавцы отделались всего лишь 12 и 8 годами соответственно. Отбывать наказание приятелям предстояло в самой комфортной тюрьме ЮАР, Претории. Но, революционер ныне пошёл жидкий, и не хочет сидеть в тюрьме (даже странно, почему это?), и товарищи решаются на побег. Идея прекрасная, вопрос только в том — как это сделать, учитывая, что Претория была одной из самых охраняемых тюрем?
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="all-reviews__dotts"></div>
+									</div>
+								</div>
+								<div class="body-reviews-tabs__body">
+									<div class="positive-reviews__slider swiper">
+										<!-- Движущаяся часть слайдера -->
+										<div class="positive-reviews__wrapper reviews-wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="positive-reviews__slide review swiper-slide">
+												<article class="review__item review__item_positive item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Lerata</a>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_4, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(113)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>2</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_4"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>На пути к цели</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Честно скажу, я раньше не особо задумывалась о таком понятии, как апартеид. Он казался чем-то старым, давно ушедшим в небытие и не заслуживающим внимания современного человека, однако хочу признаться, что просмотр фильма «Побег из Претории» заставил меня пересмотреть многие вещи. Сюжет основан на вполне реальных событиях, описанных в книге одного из участников тех жутких событий, и я считаю, что зрителям будет не лишним ознакомиться с тем, что творилось в ЮАР посредством настоящей приключенческой драмы, в которой правды куда больше, чем вымысла.
+															</p>
+															<p>
+																Развитие событий происходит в 1979 году, когда апартеид в ЮАР находится на пике своего могущества. Но с подобной политикой дискриминации по расовому признаку согласны совсем не все. Даже многие белые люди не могут воспринимать адекватно политику властей. Среди таких революционеров оказываются Тим Дженкин и Стивен Ли. Молодые люди не были готовы к открытому оружейному противостоянию и считали, что могут принести гораздо больше пользы раздавая листовки.
+															</p>
+															<p>
+																Но власть не дремлет, полиция пристально следит за нарушителями спокойствия вне зависимости от цвета кожи. Даже если ты белый — это ничего не значит. И вот нашим бравым революционерам приходится отправиться в Преторию, страшную тюрьму, откуда можно выйти только при большом везении или помиловании главы государства. Понятное дело, что Дженкин и Ли на подобное рассчитывать не могут и им приходится обдумать план побега.
+															</p>
+															<p>
+																Что мне в этом фильме понравилось, так это то, что авторы не слишком сильно нагнетают драму. Они, конечно, показывают все несправедливость апартеида и как много без он принес темнокожему населению, но это скорее фильм о том, как переломить суть событий, изменить себя и окружающих, добиться правды и воли даже тогда, когда на тебя наставлено дуло пистолета.
+															</p>
+															<p>
+																Дэниэл Рэдклифф открылся для меня с неожиданно позитивной стороны. В последние пару лет он играет в каких-то очень странных проектах. Например, «Пушки Акимбо», «Человек- швейцарский нож». На каждый такой проект находятся свои любители, но, например, мне интересней видеть Рэдклиффа в образе нормального, простого человека. А когда он еще и бежит из тюрьмы, словно какой-нибудь Вентворт Миллер, тогда это просто шикарно. Во многом мое внимание к фильмы приковал именно Дэниэл, который совсем не подвел и очень даже порадовал.
+															</p>
+															<p>
+																«Побег из Претории» стоит посмотреть зрителям, плохо знакомым с историей апартеида. Я выделила для себя немало интересной информации, которая осела в моей памяти надолго. И даже если вы большие знатоки того, что происходило в ЮАР, это все равно не помешает вам получить удовольствие от просмотра фильм о побеге с отличной игрой Дэниэла Рэдклиффа.
+															</p>
+															<p>
+																8 из 10
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="positive-reviews__slide review swiper-slide">
+												<article class="review__item review__item_positive item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Симон</a>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_5, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(684)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>17</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>18</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_5"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>«Зэка Васильев и Петров-зэка»</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																- Ипполит Георгиевич, о чем вы думаете?
+																- Я не собираюсь перед вами отчитываться.
+																- У вас на лице написано, что обо мне.
+																- Да, о вас, искатель приключений. Для вас нет ничего святого. Такие, как вы, всюду суют свой нос. Верят не в разум, а в порыв. Вы неуправляемы! Для вас главное не разум, а чувство, импульс. Вы угроза для общества.
+																- Весьма лестный отзыв.
+																- А вы о чем думаете?
+																- О горячем чае.
+																- Ну, о горячем чае я тоже думаю. Но все-таки, откровенность за откровенность…
+															</p>
+															<p>
+																«Ирония судьбы или с лёгким паром», 1975, реж. Э. Рязанов
+															</p>
+															<p>
+																Декабрьский диалог персонажей А. Мягкова и Ю. Яковлева в новогоднюю ночь, у крыльца ленинградской высотки, известен каждому. Два совершенно разных по темпераменту человека и думают о разном. Хотя что им остаётся? Зима, мороз, темень. Оба выставлены за дверь. Страсти отчаяния кипят в обоих. Москвич на алкоголизм пеняет себе самому, без пяти минут супруг, ревностью обуреваем. Как оно там дальше сложится, ещё не известно никому. И думы, думы, думы в мимике лиц в молчании.
+															</p>
+															<p>
+																Но да ладно, с ними, отечественный классик более-менее ситуацию «разрулил». Давно «разрулил». Меж себя они всё решили. И Галя «при своих». И Надя не в накладе. Зачёт.
+															</p>
+															<p>
+																А о чём думают, волей обстоятельств, тюрьмой «награждённые»? В бетонном каземате оказавшиеся. Разве диалог советской мелодрамы не может быть здесь озвучен? На мой взгляд, он весьма обтекаемый и универсальный. Вложи в любые уста, перелицуй на иную ситуацию, актуальности не потеряет. Верно? Упрёк фехтующего, блок в отражении противником. Легко и просто нападение провалено. Продолжим? Нападайте-нападайте.
+															</p>
+
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="positive-reviews__slide review swiper-slide">
+												<article class="review__item review__item_positive item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar user-item-review__avatar_without _icon-user"></a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">mariinna2017</a>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_6, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(53)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>29</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike item-action">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>37</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_6"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Гарри Поттер против апартеида.</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">3 апреля 2020 | 22:00</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Действие фильма происходит в ЮАР, в семидесятые годы двадцатого века, в годы безраздельного господства белых, названного апартеидом. Начало фильма наглядно демонстрирует нам прелести системы: белые полицейские прививают чернокожим любовь и уважение с помощью дубинок и слезоточивого газа. Апартеид проявлялся не только в подавлении любого сопротивления, но и в запрете осуществлять гражданские права для чернокожих. Чернокожие составляли большинство населения, и при этом, они не могли получать образование, медицинское обслуживание, участвовать в выборах, и даже выходить на улицу в тёмное время суток, видимо для того, чтобы не отсвечивали в темноте.
+															</p>
+															<p>
+																Апартеид был осуждён всем прогрессивным человечеством, что не мешало властям неуклонно осуществлять его и дальше. Южноафриканские борцы за свободу создали АНК, по образцу индийского ИНК, но использовали отнюдь не мирные формы протеста. Один из лидеров АНК, некий Мандела, был осуждён за терроризм, а впоследствии был награждён премией мира за те же самые деяния. Чудны дела твои…
+															</p>
+															<p>
+																Из этого фильма я с удивлением узнала, что борьбу с апартеидом вели не только чернокожие. Главные герои фильма — белые члены АНК, распространившие листовки с призывом уничтожить режим апартеида. Южноафриканское законодательство было гуманным, и за столь тяжкое преступление, мерзавцы отделались всего лишь 12 и 8 годами соответственно. Отбывать наказание приятелям предстояло в самой комфортной тюрьме ЮАР, Претории. Но, революционер ныне пошёл жидкий, и не хочет сидеть в тюрьме (даже странно, почему это?), и товарищи решаются на побег. Идея прекрасная, вопрос только в том — как это сделать, учитывая, что Претория была одной из самых охраняемых тюрем?
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="positive-reviews__dotts"></div>
+									</div>
+								</div>
+								<div class="body-reviews-tabs__body">
+									<div class="negative-reviews__slider swiper">
+										<!-- Движущаяся часть слайдера -->
+										<div class="negative-reviews__wrapper reviews-wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="negative-reviews__slide review swiper-slide">
+												<article class="review__item review__item_negative item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Lerata</a>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_7, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(113)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>2</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_7"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>На пути к цели</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Честно скажу, я раньше не особо задумывалась о таком понятии, как апартеид. Он казался чем-то старым, давно ушедшим в небытие и не заслуживающим внимания современного человека, однако хочу признаться, что просмотр фильма «Побег из Претории» заставил меня пересмотреть многие вещи. Сюжет основан на вполне реальных событиях, описанных в книге одного из участников тех жутких событий, и я считаю, что зрителям будет не лишним ознакомиться с тем, что творилось в ЮАР посредством настоящей приключенческой драмы, в которой правды куда больше, чем вымысла.
+															</p>
+															<p>
+																Развитие событий происходит в 1979 году, когда апартеид в ЮАР находится на пике своего могущества. Но с подобной политикой дискриминации по расовому признаку согласны совсем не все. Даже многие белые люди не могут воспринимать адекватно политику властей. Среди таких революционеров оказываются Тим Дженкин и Стивен Ли. Молодые люди не были готовы к открытому оружейному противостоянию и считали, что могут принести гораздо больше пользы раздавая листовки.
+															</p>
+															<p>
+																Но власть не дремлет, полиция пристально следит за нарушителями спокойствия вне зависимости от цвета кожи. Даже если ты белый — это ничего не значит. И вот нашим бравым революционерам приходится отправиться в Преторию, страшную тюрьму, откуда можно выйти только при большом везении или помиловании главы государства. Понятное дело, что Дженкин и Ли на подобное рассчитывать не могут и им приходится обдумать план побега.
+															</p>
+															<p>
+																Что мне в этом фильме понравилось, так это то, что авторы не слишком сильно нагнетают драму. Они, конечно, показывают все несправедливость апартеида и как много без он принес темнокожему населению, но это скорее фильм о том, как переломить суть событий, изменить себя и окружающих, добиться правды и воли даже тогда, когда на тебя наставлено дуло пистолета.
+															</p>
+															<p>
+																Дэниэл Рэдклифф открылся для меня с неожиданно позитивной стороны. В последние пару лет он играет в каких-то очень странных проектах. Например, «Пушки Акимбо», «Человек- швейцарский нож». На каждый такой проект находятся свои любители, но, например, мне интересней видеть Рэдклиффа в образе нормального, простого человека. А когда он еще и бежит из тюрьмы, словно какой-нибудь Вентворт Миллер, тогда это просто шикарно. Во многом мое внимание к фильмы приковал именно Дэниэл, который совсем не подвел и очень даже порадовал.
+															</p>
+															<p>
+																«Побег из Претории» стоит посмотреть зрителям, плохо знакомым с историей апартеида. Я выделила для себя немало интересной информации, которая осела в моей памяти надолго. И даже если вы большие знатоки того, что происходило в ЮАР, это все равно не помешает вам получить удовольствие от просмотра фильм о побеге с отличной игрой Дэниэла Рэдклиффа.
+															</p>
+															<p>
+																8 из 10
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="negative-reviews__slide review swiper-slide">
+												<article class="review__item review__item_negative item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Симон</a>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_8, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(684)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>17</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>18</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_8"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>«Зэка Васильев и Петров-зэка»</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																- Ипполит Георгиевич, о чем вы думаете?
+																- Я не собираюсь перед вами отчитываться.
+																- У вас на лице написано, что обо мне.
+																- Да, о вас, искатель приключений. Для вас нет ничего святого. Такие, как вы, всюду суют свой нос. Верят не в разум, а в порыв. Вы неуправляемы! Для вас главное не разум, а чувство, импульс. Вы угроза для общества.
+																- Весьма лестный отзыв.
+																- А вы о чем думаете?
+																- О горячем чае.
+																- Ну, о горячем чае я тоже думаю. Но все-таки, откровенность за откровенность…
+															</p>
+															<p>
+																«Ирония судьбы или с лёгким паром», 1975, реж. Э. Рязанов
+															</p>
+															<p>
+																Декабрьский диалог персонажей А. Мягкова и Ю. Яковлева в новогоднюю ночь, у крыльца ленинградской высотки, известен каждому. Два совершенно разных по темпераменту человека и думают о разном. Хотя что им остаётся? Зима, мороз, темень. Оба выставлены за дверь. Страсти отчаяния кипят в обоих. Москвич на алкоголизм пеняет себе самому, без пяти минут супруг, ревностью обуреваем. Как оно там дальше сложится, ещё не известно никому. И думы, думы, думы в мимике лиц в молчании.
+															</p>
+															<p>
+																Но да ладно, с ними, отечественный классик более-менее ситуацию «разрулил». Давно «разрулил». Меж себя они всё решили. И Галя «при своих». И Надя не в накладе. Зачёт.
+															</p>
+															<p>
+																А о чём думают, волей обстоятельств, тюрьмой «награждённые»? В бетонном каземате оказавшиеся. Разве диалог советской мелодрамы не может быть здесь озвучен? На мой взгляд, он весьма обтекаемый и универсальный. Вложи в любые уста, перелицуй на иную ситуацию, актуальности не потеряет. Верно? Упрёк фехтующего, блок в отражении противником. Легко и просто нападение провалено. Продолжим? Нападайте-нападайте.
+															</p>
+
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="negative-reviews__slide review swiper-slide">
+												<article class="review__item review__item_negative item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar user-item-review__avatar_without _icon-user"></a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">mariinna2017</a>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_9, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(53)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>29</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike item-action">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>37</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_9"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Гарри Поттер против апартеида.</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">3 апреля 2020 | 22:00</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Действие фильма происходит в ЮАР, в семидесятые годы двадцатого века, в годы безраздельного господства белых, названного апартеидом. Начало фильма наглядно демонстрирует нам прелести системы: белые полицейские прививают чернокожим любовь и уважение с помощью дубинок и слезоточивого газа. Апартеид проявлялся не только в подавлении любого сопротивления, но и в запрете осуществлять гражданские права для чернокожих. Чернокожие составляли большинство населения, и при этом, они не могли получать образование, медицинское обслуживание, участвовать в выборах, и даже выходить на улицу в тёмное время суток, видимо для того, чтобы не отсвечивали в темноте.
+															</p>
+															<p>
+																Апартеид был осуждён всем прогрессивным человечеством, что не мешало властям неуклонно осуществлять его и дальше. Южноафриканские борцы за свободу создали АНК, по образцу индийского ИНК, но использовали отнюдь не мирные формы протеста. Один из лидеров АНК, некий Мандела, был осуждён за терроризм, а впоследствии был награждён премией мира за те же самые деяния. Чудны дела твои…
+															</p>
+															<p>
+																Из этого фильма я с удивлением узнала, что борьбу с апартеидом вели не только чернокожие. Главные герои фильма — белые члены АНК, распространившие листовки с призывом уничтожить режим апартеида. Южноафриканское законодательство было гуманным, и за столь тяжкое преступление, мерзавцы отделались всего лишь 12 и 8 годами соответственно. Отбывать наказание приятелям предстояло в самой комфортной тюрьме ЮАР, Претории. Но, революционер ныне пошёл жидкий, и не хочет сидеть в тюрьме (даже странно, почему это?), и товарищи решаются на побег. Идея прекрасная, вопрос только в том — как это сделать, учитывая, что Претория была одной из самых охраняемых тюрем?
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="negative-reviews__dotts"></div>
+									</div>
+								</div>
+								<div class="body-reviews-tabs__body">
+									<div class="neutral-reviews__slider swiper">
+										<!-- Движущаяся часть слайдера -->
+										<div class="neutral-reviews__wrapper reviews-wrapper swiper-wrapper">
+											<!-- Слайд -->
+											<div class="neutral-reviews__slide review swiper-slide">
+												<article class="review__item review__item_neutral item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Lerata</a>
+																	<div class="top-content-user-review__type">Нейтральная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_10, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(113)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>2</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_10"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>На пути к цели</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">14 апреля 2020 | 09:59</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Честно скажу, я раньше не особо задумывалась о таком понятии, как апартеид. Он казался чем-то старым, давно ушедшим в небытие и не заслуживающим внимания современного человека, однако хочу признаться, что просмотр фильма «Побег из Претории» заставил меня пересмотреть многие вещи. Сюжет основан на вполне реальных событиях, описанных в книге одного из участников тех жутких событий, и я считаю, что зрителям будет не лишним ознакомиться с тем, что творилось в ЮАР посредством настоящей приключенческой драмы, в которой правды куда больше, чем вымысла.
+															</p>
+															<p>
+																Развитие событий происходит в 1979 году, когда апартеид в ЮАР находится на пике своего могущества. Но с подобной политикой дискриминации по расовому признаку согласны совсем не все. Даже многие белые люди не могут воспринимать адекватно политику властей. Среди таких революционеров оказываются Тим Дженкин и Стивен Ли. Молодые люди не были готовы к открытому оружейному противостоянию и считали, что могут принести гораздо больше пользы раздавая листовки.
+															</p>
+															<p>
+																Но власть не дремлет, полиция пристально следит за нарушителями спокойствия вне зависимости от цвета кожи. Даже если ты белый — это ничего не значит. И вот нашим бравым революционерам приходится отправиться в Преторию, страшную тюрьму, откуда можно выйти только при большом везении или помиловании главы государства. Понятное дело, что Дженкин и Ли на подобное рассчитывать не могут и им приходится обдумать план побега.
+															</p>
+															<p>
+																Что мне в этом фильме понравилось, так это то, что авторы не слишком сильно нагнетают драму. Они, конечно, показывают все несправедливость апартеида и как много без он принес темнокожему населению, но это скорее фильм о том, как переломить суть событий, изменить себя и окружающих, добиться правды и воли даже тогда, когда на тебя наставлено дуло пистолета.
+															</p>
+															<p>
+																Дэниэл Рэдклифф открылся для меня с неожиданно позитивной стороны. В последние пару лет он играет в каких-то очень странных проектах. Например, «Пушки Акимбо», «Человек- швейцарский нож». На каждый такой проект находятся свои любители, но, например, мне интересней видеть Рэдклиффа в образе нормального, простого человека. А когда он еще и бежит из тюрьмы, словно какой-нибудь Вентворт Миллер, тогда это просто шикарно. Во многом мое внимание к фильмы приковал именно Дэниэл, который совсем не подвел и очень даже порадовал.
+															</p>
+															<p>
+																«Побег из Претории» стоит посмотреть зрителям, плохо знакомым с историей апартеида. Я выделила для себя немало интересной информации, которая осела в моей памяти надолго. И даже если вы большие знатоки того, что происходило в ЮАР, это все равно не помешает вам получить удовольствие от просмотра фильм о побеге с отличной игрой Дэниэла Рэдклиффа.
+															</p>
+															<p>
+																8 из 10
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="neutral-reviews__slide review swiper-slide">
+												<article class="review__item review__item_neutral item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/movie-card/reviews/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/reviews/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">Симон</a>
+																	<div class="top-content-user-review__type">Нейтральная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_11, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(684)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>17</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>18</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_11"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>«Зэка Васильев и Петров-зэка»</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">8 марта 2020 | 14:58</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																- Ипполит Георгиевич, о чем вы думаете?
+																- Я не собираюсь перед вами отчитываться.
+																- У вас на лице написано, что обо мне.
+																- Да, о вас, искатель приключений. Для вас нет ничего святого. Такие, как вы, всюду суют свой нос. Верят не в разум, а в порыв. Вы неуправляемы! Для вас главное не разум, а чувство, импульс. Вы угроза для общества.
+																- Весьма лестный отзыв.
+																- А вы о чем думаете?
+																- О горячем чае.
+																- Ну, о горячем чае я тоже думаю. Но все-таки, откровенность за откровенность…
+															</p>
+															<p>
+																«Ирония судьбы или с лёгким паром», 1975, реж. Э. Рязанов
+															</p>
+															<p>
+																Декабрьский диалог персонажей А. Мягкова и Ю. Яковлева в новогоднюю ночь, у крыльца ленинградской высотки, известен каждому. Два совершенно разных по темпераменту человека и думают о разном. Хотя что им остаётся? Зима, мороз, темень. Оба выставлены за дверь. Страсти отчаяния кипят в обоих. Москвич на алкоголизм пеняет себе самому, без пяти минут супруг, ревностью обуреваем. Как оно там дальше сложится, ещё не известно никому. И думы, думы, думы в мимике лиц в молчании.
+															</p>
+															<p>
+																Но да ладно, с ними, отечественный классик более-менее ситуацию «разрулил». Давно «разрулил». Меж себя они всё решили. И Галя «при своих». И Надя не в накладе. Зачёт.
+															</p>
+															<p>
+																А о чём думают, волей обстоятельств, тюрьмой «награждённые»? В бетонном каземате оказавшиеся. Разве диалог советской мелодрамы не может быть здесь озвучен? На мой взгляд, он весьма обтекаемый и универсальный. Вложи в любые уста, перелицуй на иную ситуацию, актуальности не потеряет. Верно? Упрёк фехтующего, блок в отражении противником. Легко и просто нападение провалено. Продолжим? Нападайте-нападайте.
+															</p>
+
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+
+											<div class="neutral-reviews__slide review swiper-slide">
+												<article class="review__item review__item_neutral item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="profile.html" class="user-item-review__avatar user-item-review__avatar_without _icon-user"></a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="profile.html" class="top-content-user-review__name">mariinna2017</a>
+																	<div class="top-content-user-review__type">Нейтральная рецензия</div>
+																</div>
+																<div data-da=".item-review-user-list-mobile_12, 767.98" class="content-user-review__bottom bottom-content-user-review">
+																	<ul class="bottom-content-user-review__list">
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Рецензии<span>(53)</span></a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Оценки</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Друзья</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Фильмы</a></li>
+																		<li class="bottom-content-user-review__item"><a href="" class="bottom-content-user-review__link">Звёзды</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>29</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike item-action">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>37</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile item-review-user-list-mobile_12"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Гарри Поттер против апартеида.</h4>
+															</div>
+															<time datetime="2020-04-14T09:59:00+02:00">3 апреля 2020 | 22:00</time>
+														</div>
+														<div class="body-item-review__content">
+															<p>
+																Действие фильма происходит в ЮАР, в семидесятые годы двадцатого века, в годы безраздельного господства белых, названного апартеидом. Начало фильма наглядно демонстрирует нам прелести системы: белые полицейские прививают чернокожим любовь и уважение с помощью дубинок и слезоточивого газа. Апартеид проявлялся не только в подавлении любого сопротивления, но и в запрете осуществлять гражданские права для чернокожих. Чернокожие составляли большинство населения, и при этом, они не могли получать образование, медицинское обслуживание, участвовать в выборах, и даже выходить на улицу в тёмное время суток, видимо для того, чтобы не отсвечивали в темноте.
+															</p>
+															<p>
+																Апартеид был осуждён всем прогрессивным человечеством, что не мешало властям неуклонно осуществлять его и дальше. Южноафриканские борцы за свободу создали АНК, по образцу индийского ИНК, но использовали отнюдь не мирные формы протеста. Один из лидеров АНК, некий Мандела, был осуждён за терроризм, а впоследствии был награждён премией мира за те же самые деяния. Чудны дела твои…
+															</p>
+															<p>
+																Из этого фильма я с удивлением узнала, что борьбу с апартеидом вели не только чернокожие. Главные герои фильма — белые члены АНК, распространившие листовки с призывом уничтожить режим апартеида. Южноафриканское законодательство было гуманным, и за столь тяжкое преступление, мерзавцы отделались всего лишь 12 и 8 годами соответственно. Отбывать наказание приятелям предстояло в самой комфортной тюрьме ЮАР, Претории. Но, революционер ныне пошёл жидкий, и не хочет сидеть в тюрьме (даже странно, почему это?), и товарищи решаются на побег. Идея прекрасная, вопрос только в том — как это сделать, учитывая, что Претория была одной из самых охраняемых тюрем?
+															</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-goto-header data-goto=".review-form" type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="neutral-reviews__dotts"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="review-form">
+				<div class="review-form__container">
+					<form action="#" class="review-form__form form-review form">
+						<div class="form-review__user user-form-review">
+							<a href="profile.html" class="user-form-review__avatar">
+								<div class="user-form-review__image-ibg">
+									<picture><source data-srcset="img/movie-card/review-form/avatar-form.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/movie-card/review-form/avatar-form.jpg" alt="Avatar"></picture>
+								</div>
+							</a>
+							<div class="user-form-review__info info-user-form-review">
+								<a href="profile.html" class="info-user-form-review__name">Евгений Батиков</a>
+								<div class="info-user-form-review__label">Мой профиль</div>
+							</div>
+						</div>
+						<div class="form-review__title-line title-line-review">
+							<!-- <input autocomplete="off" type="text" name="form[]" data-error="Ошибка" placeholder="" class="title-line-review__input input"> -->
+							<div class="title-line-review__group form-group">
+								<label for="reviewTitle" class="form-label"></label>
+								<input data-required data-error="Введите заголовок" id="reviewTitle" type="text" name="reviewTitle" placeholder="Заголовок Вашей рецензии" class="form__input input">
+							</div>
+							<select name="form[]" data-speed="400" data-class-modif="review-form">
+								<option value="1" selected>Положительная рецензия</option>
+								<option value="2">Нейтральная рецензия</option>
+								<option value="3">Отрицательная рецензия</option>
+							</select>
+						</div>
+						<div class="form-review-settings__buttons">
+							<button type="button" class="form-review-settings__button form-review-settings__button_bold">Ж</button>
+							<button type="button" class="form-review-settings__button form-review-settings__button_italics">К</button>
+							<button type="button" class="form-review-settings__button form-review-settings__button_uppercase">А</button>
+						</div>
+						<div class="form-review__textarea form-group">
+							<label for="form-reviewMessage" class="form-label"></label>
+							<textarea data-editing data-required data-error="Введите сообщение" name="message" id="form-reviewMessage" placeholder="Введите отзыв" class="form__input"></textarea>
+						</div>
+						<div class="form-review__footer footer-form-review">
+							<div class="footer-form-review__line">
+								<div class="footer-form-review__agreement">
+									<div class="footer-form-review-agreement form-group">
+										<label for="form-reviewAgreement" class="custom-label">
+											<input checked data-required id="form-reviewAgreement" type="checkbox" name="agreement" class="real-checkbox req">
+											<span class="custom-checkbox-simple"></span>
+											<span class="signature">Я соглашаюсь на <a href="#">правила публицации рецензии</a></span>
+										</label>
+									</div>
+								</div>
+								<div class="footer-form-review__buttons">
+									<button type="button" class="footer-form-review__button button button_border">Предварительный просмотр</button>
+									<button type="submit" class="footer-form-review__button button button_submit">Отправить</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<section class="subscribe">
+				<div class="subscribe__body body-subscribe">
+					<div class="body-subscribe__logo">
+						<img data-src="img/logo2.svg" alt="Logo">
+					</div>
+					<form action="#" class="subscribe__form form-subscribe">
+						<div class="form-subscribe__content">
+							<div class="form-subscribe__title title">
+								<h3>Подпишитесь на E-mail рассылку</h3>
+							</div>
+							<div class="form-subscribe__text">
+								<p>Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите бесплатную E-mail рассылку!</p>
+							</div>
+						</div>
+						<div class="form-subscribe__request request-form-subscribe">
+							<input data-required="email" autocomplete="off" type="text" name="subscribe" data-error="Введите правильный E-mail" placeholder="Введите свой E-mail адрес" class="input form-input">
+							<button type="submit" class="request-form-subscribe__button button">Подписаться</button>
+						</div>
+						<div class="form-subscribe__privacy">
+							<div class="form__group">
+								<label for="formAgreement" class="custom-label">
+									<input checked data-required id="formAgreement" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<div>Соглашаюсь на условия <a href="#" class="privacy-link">политики конфиденциальности</a></div>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__socials socials">
+						<a href="https://vk.com/" target="_blank" class="body-footer__social _icon-vk"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="body-footer__social _icon-instagram"></a>
+						<a href="https://www.facebook.com/" target="_blank" class="body-footer__social _icon-facebook"></a>
+						<a href="https://twitter.com/i/flow/login" target="_blank" class="body-footer__social _icon-x"></a>
+					</div>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Афиша</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+								<li class="menu-footer__item"><a href="actor-card.html" class="menu-footer__link">Персоны</a></li>
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Каталог фильмов</a></li>
+								<li class="menu-footer__item"><a href="search-results.html" class="menu-footer__link">Рейтинги</a></li>
+								<li class="menu-footer__item"><a href="feedback.html" class="menu-footer__link">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__rights">2020 © Kinoarea. Все права защищены</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<button type="button" class="button-up _hide _icon-arrow-long-top"></button>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Войти</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="nameLoginFormLogin" type="text" name="login" placeholder="Логин, почта или телефон" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Неверный пароль" id="namePasswordFormLogin" type="password" name="password" placeholder="Ваш пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Войти</button>
+							<a href="#" data-popup="#popup-register" class="body-popup__button-transparent button">Зарегистрироваться</a>
+						</div>
+						<a href="#" data-popup="#popup-recovery" class="body-popup__recovery">Восстановить пароль</a>
+						<div class="body-popup__socials socials">
+							<a href="" target="_blank" class="header__social _icon-vk"></a>
+							<a href="" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="popup-register" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Зарегистрироваться</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите имя" id="nameFormRegister" type="text" name="name" placeholder="Имя" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите фамилию" id="surnameFormRegister" type="text" name="surname" placeholder="Фамилия" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="loginFormRegister" type="text" name="login" placeholder="Придумайте логин" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordFormRegister" type="password" name="password" placeholder="Придумайте пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordRepitFormRegister" type="password" name="password" placeholder="Повторите пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите номер телефона" id="telFormRegister" type="tel" name="telephone" placeholder="Номер телефона" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required="email" data-error="Неправильная электронная почта" id="emailFormRegister" type="text" name="email" placeholder="Электронная почта" class="form__input input">
+							</div>
+						</div>
+						<div class="body-popup__consent">
+							<div class="form__group">
+								<label for="formAgreementRegistrationPolicy" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPolicy" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на условия <a href="#">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<div class="form__group">
+								<label for="formAgreementRegistrationPersonalData" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPersonalData" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на обработку персональных данных</span>
+								</label>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+					<form data-dev action="#" data-popup-message="#popup-recovery-only-password" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="body-popup__line-top">
+								<div class="form__group">
+									<input data-required data-error="Неверный номер теелфона или почта" id="loginFormRecovery" type="text" name="login" placeholder="Почта или номер телефона" class="form__input input">
+								</div>
+							</div>
+							<div class="body-popup__line-bottom">
+								<button type="submit" class="body-popup__button button button_blue">Отправить</button>
+								<div class="form__group">
+									<input data-required data-error="Неверный код" id="codeFormRecovery" type="text" name="confirmation code" placeholder="Полученный код" class="form__input input">
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Далее</button>
+						</div>
+						<a href="#" class="body-popup__recovery"></a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery-only-password" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+
+
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecovery" type="password" name="recovery-only-password" placeholder="Придумайте новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecoveryСonfirm" type="password" name="recovery-only-password" placeholder="Повторите новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Жалоба</h2>
+					</div>
+					<form action="#" data-dev data-popup-message="#popup-complaint-message" class="body-popup__form form">
+						<div class="body-popup__textarea">
+							<div class="form__field-counter">
+								<div class="form__group">
+									<textarea data-required data-error="Введите сообщение" name="message" id="formComplaint" maxlength="100" class="form__input txt-item" placeholder="Кратко опишите суть проблемы"></textarea>
+								</div>
+								<div class="form-group-counter">Осталось <span></span> символов</div>
+							</div>
+
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__message">
+						<p>
+							Спасибо, что помогаете нам делать платформу лучше!
+						</p>
+						<p>
+							Мы обязательно примем необходимые меры в отношении нарушителя.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240114173932"></script>
+</body>
+
+</html>

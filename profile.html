@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Ваш профиль</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240114173932">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper_registered">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="home.html" class="header__logo">
+							<img data-src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="header__socials socials">
+							<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+							<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="schedule.html" class="menu__link">Афиша</a></li>
+								<li class="menu__item"><a href="media.html" class="menu__link">Медиа</a></li>
+								<li class="menu__item"><a href="movie-card.html" class="menu__link">Фильмы</a></li>
+								<li class="menu__item"><a href="actor-card.html" class="menu__link">Актёры</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="compilations.html" class="menu__link">Подборки</a></li>
+								<li class="menu__item"><a href="genre.html" class="menu__link">Категории</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search">
+							<button type="button" class="form-search-header__icon _icon-search"></button>
+							<div class="body-main-header__search search-header">
+								<form action="#" class="search-header__form form-search-header">
+									<input autocomplete="off" type="text" name="search" placeholder="Поиск" class="form-search-header__input">
+									<a href="advanced-search.html" class="form-search-header__settings _icon-equalizer"></a>
+									<button type="submit" class="form-search-header__button _icon-search"></button>
+								</form>
+							</div>
+						</div>
+						<div class="actions-header__user user-header">
+							<select name="form[name-user]" data-class-modif="user">
+								<option value="1" selected>Евгений</option>
+								<option value="2">Иван</option>
+								<option value="3">Александр</option>
+								<option value="4">Алина</option>
+								<option value="5">Василиса</option>
+							</select>
+							<a href="profile.html" class="user-header__avatar">
+								<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/avatar.jpg" alt="Avatar"></picture>
+							</a>
+						</div>
+						<div class="actions-header__login login-actions-header">
+							<a href="#" data-popup="#popup-login" class="login-actions-header__button button button_blue">Войти</a>
+						</div>
+						<div class="menu-icon__wrapper">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+
+			<section class="profile">
+				<div class="profile__container">
+					<div data-tabs class="profile-tabs-wrapper">
+						<div data-sticky-container class="profile-tabs">
+							<nav data-tabs-titles data-sticky-element class="profile-tabs__navigation">
+								<button type="button" class="profile-tabs__title _icon-home _tab-active"></button>
+								<button type="button" class="profile-tabs__title profile-tabs__title_missed _icon-friends"></button>
+								<button type="button" class="profile-tabs__title _icon-review"></button>
+								<button type="button" class="profile-tabs__title _icon-assessments"></button>
+								<button type="button" class="profile-tabs__title _icon-comments"></button>
+								<button type="button" class="profile-tabs__title _icon-list"></button>
+								<button type="button" class="profile-tabs__title _icon-famous"></button>
+								<div class="sticky-placeholder"></div>
+							</nav>
+						</div>
+						<div data-tabs-body class="profile-tabs__content">
+							<div class="profile-tabs__body profile-main">
+								<div class="profile-tabs__main main-profile-tabs">
+									<div class="main-profile-tabs__header header-profile-tabs-main header-profile-tabs">
+										<div class="header-profile-tabs-main__title">
+											<h3>Ваш профиль</h3>
+										</div>
+										<div class="header-profile-tabs-main__content content-header-profile-tabs">
+											<button type="button" class="content-header-profile-tabs__settings button_dark _icon-settings profile-main-button">Настройки</button>
+										</div>
+									</div>
+
+									<div class="main-profile-tabs__main-block main-block-profile">
+										<div class="main-block-profile__avatar">
+											<div class="main-block-profile__image-ibg">
+												<picture><source data-srcset="img/profile-block/main/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/main/avatar.jpg" alt="Avatar"></picture>
+											</div>
+										</div>
+										<div class="main-block-profile__content content-main-block-profile">
+											<div class="content-main-block-profile__name title">Евгений Батиков</div>
+											<div class="content-main-block-profile__socials socials">
+												<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+											</div>
+											<div class="content-main-block-profile__desc">
+												<p>
+													Учитывая ключевые сценарии поведения, базовый вектор развития, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для поставленных обществом задач.
+												</p>
+											</div>
+											<div class="content-main-block-profile__info info-main-block-profile">
+												<div class="info-main-block-profile__line">
+													<div class="info-main-block-profile__name">Пол:</div>
+													<div class="info-main-block-profile__value">Мужской</div>
+												</div>
+												<div class="info-main-block-profile__line">
+													<div class="info-main-block-profile__name">День рождения:</div>
+													<div class="info-main-block-profile__value">24 мая 1991 г. (33 года)</div>
+												</div>
+												<div class="info-main-block-profile__line">
+													<div class="info-main-block-profile__name">Страна:</div>
+													<div class="info-main-block-profile__value">Россия</div>
+												</div>
+												<div class="info-main-block-profile__line">
+													<div class="info-main-block-profile__name">Город:</div>
+													<div class="info-main-block-profile__value">Москва</div>
+												</div>
+												<div class="info-main-block-profile__line">
+													<div class="info-main-block-profile__name">Любимые жанры:</div>
+													<div class="info-main-block-profile__value">Драма, триллер, документальный</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="main-profile-tabs__footer footer-main-profile">
+										<div class="footer-main-profile__items">
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">25</div>
+												<div class="footer-main-profile__label">Фильмы</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">15</div>
+												<div class="footer-main-profile__label">Друзья</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">2</div>
+												<div class="footer-main-profile__label">Любимые фильмы</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">5</div>
+												<div class="footer-main-profile__label">Избранное</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">22</div>
+												<div class="footer-main-profile__label">Рецензии</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">13</div>
+												<div class="footer-main-profile__label">Комментарии</div>
+											</a>
+											<a href="#" class="footer-main-profile__item">
+												<div class="footer-main-profile__number">16</div>
+												<div class="footer-main-profile__label">Ожидаемые фильмы</div>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div hidden class="profile-tabs__main-settings settings-profile-block">
+									<form action="#" class="settings-profile-block__form">
+										<div class="settings-profile-block__header header-profile-tabs-main header-profile-tabs">
+											<div class="settings-profile-block__title">
+												<h3>Настройки профиля</h3>
+											</div>
+											<div class="settings-profile-block__content content-header-profile-tabs">
+												<button data-da=".settings-profile-block__main-block,767.98" type="button" class="settings-profile-block__button button_dark _icon-settings profile-main-button">Cохранить</button>
+											</div>
+										</div>
+										<div class="settings-profile-block__main-block main-block-profile">
+											<div class="main-block-profile__left left-main-block-profile">
+												<div class="main-block-profile__avatar">
+													<div class="main-block-profile__image-ibg">
+														<picture><source data-srcset="img/profile-block/main/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/main/avatar.jpg" alt="Avatar"></picture>
+													</div>
+												</div>
+												<div class="left-main-block-profile__actions">
+													<div class="left-main-block-profile__loading">
+														<div class="left-profile-socials__link">Загрузить фото</div>
+														<div class="loading__item">
+															<input type="file" accept=".jpg, .png" class="loading__input input-loading"></input>
+															<button type="button" class="loading__button button button_blue">Загрузить</button>
+														</div>
+													</div>
+													<div class="left-main-block-profile__socials left-profile-socials">
+														<a href="https://vk.com/" target="_blank" class="left-profile-socials__item">
+															<div class="left-profile-socials__logo logo-vk _icon-vk"></div>
+															<div class="left-profile-socials__link">vk.com/evgen...</div>
+														</a>
+														<a href="https://www.instagram.com/" target="_blank" class="left-profile-socials__item">
+															<div class="left-profile-socials__logo logo-inst _icon-instagram"></div>
+															<div class="left-profile-socials__link">instagram.com/evgen...</div>
+														</a>
+														<a href="https://www.facebook.com/" target="_blank" class="left-profile-socials__item">
+															<div class="left-profile-socials__logo logo-x _icon-x"></div>
+															<div class="left-profile-socials__link">twitter.com/EvgenCom...</div>
+														</a>
+														<a href="https://twitter.com/i/flow/login" target="_blank" class="left-profile-socials__item">
+															<div class="left-profile-socials__logo logo-fb _icon-facebook"></div>
+															<div class="left-profile-socials__link">facebook.com/thebadco...</div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="main-block-profile__right right-main-block-profile">
+												<div class="right-main-block-profile__inputs inputs-right-profile">
+													<div class="inputs-right-profile__line">
+														<div class="form__group">
+															<input data-required data-error="Введите имя" id="settingsProfileName" type="text" name="name" autocomplete="off" placeholder="Имя" class="form__input input">
+														</div>
+														<div class="form__group">
+															<input data-required data-error="Введите фамилию" id="settingsProfileSurname" type="text" name="surname" placeholder="Фамилия" class="form__input input">
+														</div>
+													</div>
+													<div class="inputs-right-profile__line">
+														<select name="form[]" data-class-modif="settings-profile-gender">
+															<option value="" selected>Пол</option>
+															<option value="2">Мужской</option>
+															<option value="3">Женский</option>
+														</select>
+														<div class="form__group">
+															<input data-datepicker id="settingsProfileDatepicker" type="text" name="datepicker" placeholder="Дата рождения" class="form__input input">
+														</div>
+													</div>
+													<div class="inputs-right-profile__line">
+														<select name="form[]" data-class-modif="settings-profile-country">
+															<option value="" selected>Страна</option>
+															<option value="2">Россия</option>
+															<option value="3">Беларусь</option>
+															<option value="4">Казахстан</option>
+															<option value="5">Азербайджан</option>
+															<option value="6">Армения</option>
+															<option value="7">Узбекистан</option>
+														</select>
+														<div class="form__group">
+															<input data-required data-error="Введите город" id="settingsProfileСity" type="text" name="city" placeholder="Город" class="form__input input">
+														</div>
+													</div>
+												</div>
+
+												<div class="right-main-block-profile__select">
+													<select multiple name="form[]" data-class-modif="settings-profile-genre">
+														<option value="" selected>Любимый жанр</option>
+														<option value="2">Анимация</option>
+														<option value="3">Биография</option>
+														<option value="4">Боевик</option>
+														<option value="5">Вестерн</option>
+														<option value="6">Война</option>
+														<option value="7">Детектив</option>
+														<option value="8">Для взрослых</option>
+														<option value="9">Документальный</option>
+														<option value="10">Драма</option>
+														<option value="11">История</option>
+														<option value="12">Комедия</option>
+													</select>
+												</div>
+
+												<div class="right-main-block-profile__textarea form__field-counter">
+													<div class="form__group">
+														<textarea data-required data-error="Введите информацию" maxlength="250" name="message" id="settingsProfileAbout" placeholder="Информация о себе" class="form__input txt-item"></textarea>
+														<div class="form-group-counter">Осталось <span></span> символов</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="user-reviews">
+									<div class="user-reviews__container">
+										<div class="trailers__block-header block-header">
+											<div class="block-header__title title-block">
+												<h3>Ваши рецензии</h3>
+											</div>
+											<div class="block-header__content content-block-header">
+												<a href="#" class="content-block-header__all _icon-arrow-right all">Все рецензии</a>
+											</div>
+										</div>
+									</div>
+									<div class="user-reviews__body body-user-reviews">
+										<div class="body-user-reviews__items">
+											<article data-showmore="items" class="body-user-reviews review__item review__item_positive item-review">
+												<div class="item-review__header header-item-review">
+													<div class="header-item-review__user user-item-review">
+														<a href="movie-card.html" class="user-item-review__avatar">
+															<picture><source data-srcset="img/profile-block/reviews-user/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/01.jpg" alt="Avatar"></picture>
+														</a>
+														<div class="user-item-review__content content-user-review">
+															<div class="content-user-review__top top-content-user-review">
+																<a href="movie-card.html" class="top-content-user-review__name">Бладшот</a>
+																<time datetime="2020-04-14T10:14:00+02:00">14 апреля 2020 | 10:14</time>
+																<div class="top-content-user-review__type">Положительная рецензия</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+														<div class="rating-item__like item-action">
+															<button type="button" class="item-like _icon-like"></button>
+															<div class="rating-item__quantity">
+																<span>145</span>
+															</div>
+														</div>
+														<div class="rating-item__dislike">
+															<button type="button" class="item-like _icon-like item-action"></button>
+															<div class="rating-item__quantity">
+																<span>24</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-review-user-list-mobile"></div>
+
+												<div class="item-review__body body-item-review">
+													<div class="body-item-review__title-line title-line-body-review">
+														<div class="title-line-body-review__title">
+															<h4>Вин Дизель!!!!</h4>
+														</div>
+													</div>
+													<div class="body-item-review__content">
+														<p>История поведает о бравом морпехе Рэе, попавшим в руки злюкам-злодюкам, которого те успешно отправляют на встречу с создателем выстрелом в голову. Крупная корпорация RTS реанимирует тело морпеха, напичкав его нанороботами и превратив в универсального неубиваемого солдата. Рэй жаждет мести и приложит все усилия, чтобы добраться до своих обидчиков…</p>
+														<p>Фильм снят по комиксу от компании «Valiant», имеет возрастной рейтинг 16+ и в целом выглядит очень неплохо. На первый взгляд может показаться, что сюжет простенький и в точности следует по протоптанной дорожке своих многих собратьев из вселенной «Marvel» и «DC», пытаясь подсунуть избитую идею, напихав ленту под завязку одним лишь графоном. Но картина подразумевает под собой неплохую и интересную историю, как для жанра кинокомикса, притом пару раз даже предлагая сюжетные повороты!</p>
+														<p>Стычки с врагами, перестрелки, графика на отличном уровне и радуют глаз, а действие на экране выглядит зрелищно и динамично, не отпуская до самого финала. Отлично реализована задумка с нанороботами, умело штопающих дыры на теле главного героя и даже иногда собирая его чудесный лик из оборванных ошметков. В техническом плане придраться особо не к чему (отсутствие законов физики в данных фильмах не учитываем).</p>
+														<p>Из негатива можно выделить лишь непонятный плоский юмор в паре моментов и «умные» фразочки, которые словно бы списали из статусов в ВК. Типа: «Тебе нужно бороться, потому что борьба — это наша жизнь», тут же можно придумать с десяток аналогичных цитат на вроде «Если идет дождь, то на улице будут лужи», «Ты ходишь, а значит можешь ходить» и т. п. Но тут, как говорится, надо уметь отключать мозг.</p>
+														<p>Вывод: Вин Дизель уже был стритрейсером, в космосе воевал, супергероем стал, ждем его теперича в роли Бога.</p>
+														<p>В итоге в жанре комиксов фильм удался и выполняет все свои функции, помимо визуального развлечения, предлагает еще и интересную историю.</p>
+														<p>7 из 10</p>
+													</div>
+													<div class="body-item-review__footer-line footer-line-body-review">
+														<div class="footer-line-body-review__actions">
+															<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+															<a href="movie-card.html" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+														</div>
+														<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+													</div>
+												</div>
+												<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+													<div class="answer-comments-block__body">
+														<form action="#" class="answer-comments-block__form">
+															<div class="form__group answer-comments-block-textarea">
+																<label for="user-reviews-message-home-1" class="form__label"></label>
+																<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-home-1" class="form__input"></textarea>
+															</div>
+															<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+														</form>
+													</div>
+												</div>
+											</article>
+
+											<article data-showmore="items" class="body-user-reviews review__item review__item_negative item-review">
+												<div class="item-review__header header-item-review">
+													<div class="header-item-review__user user-item-review">
+														<a href="movie-card.html" class="user-item-review__avatar">
+															<picture><source data-srcset="img/profile-block/reviews-user/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/02.jpg" alt="Avatar"></picture>
+														</a>
+														<div class="user-item-review__content content-user-review">
+															<div class="content-user-review__top top-content-user-review">
+																<a href="movie-card.html" class="top-content-user-review__name">Притяжение</a>
+																<time datetime="2017-03-22T22:35:00+02:00">22 марта 2017 | 22:35</time>
+																<div class="top-content-user-review__type">Отрицательная рецензия</div>
+															</div>
+														</div>
+													</div>
+													<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+														<div class="rating-item__like item-action">
+															<button type="button" class="item-like _icon-like"></button>
+															<div class="rating-item__quantity">
+																<span>250</span>
+															</div>
+														</div>
+														<div class="rating-item__dislike">
+															<button type="button" class="item-like _icon-like item-action"></button>
+															<div class="rating-item__quantity">
+																<span>0</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="item-review-user-list-mobile"></div>
+
+												<div class="item-review__body body-item-review">
+													<div class="body-item-review__title-line title-line-body-review">
+														<div class="title-line-body-review__title">
+															<h4>Ну вы знаете Руса!</h4>
+														</div>
+													</div>
+													<div class="body-item-review__content">
+														<p>Даже не вторичный, а третичный сюжет, разваливающийся на части.</p>
+														<p>Картонные герои с неправдоподобными, утрированными эмоциями + мультяшный в своей нелепости фон из «солдат и народа».</p>
+														<p>Наличествует полный сет: группа отмороженных гопников, пубертатная дева, на раз-два обставляющая охрану секретных объектов и типа умного папу-полковника, любящего дочь, но не умеющего ее воспитывать, массовка в виде дебила-депутата, куча «тупых солдат», не способных справиться с группой агрессивных юнцов, ну и, наконец, «Максим Каммеррер», но на Земле — привет «Обитаемому острову».</p>
+														<p>Кстати, если кто видел бондарчуковское осмысление последнего — «Притяжение» куда хуже: тут у Бондарчука не было талантливого базиса, который даже ему не удалось в ТОТ раз до конца извазюкать в грязи.</p>
+														<p>В общем, я поражаюсь на людей, которые ставят ЭТОМУ высокие оценки. Две звезды- просто потому что я добрый.</p>
+													</div>
+													<div class="body-item-review__footer-line footer-line-body-review">
+														<div class="footer-line-body-review__actions">
+															<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+															<a href="movie-card.html" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+														</div>
+														<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+													</div>
+												</div>
+												<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+													<div class="answer-comments-block__body">
+														<form action="#" class="answer-comments-block__form">
+															<div class="form__group answer-comments-block-textarea">
+																<label for="user-reviews-message-home-2" class="form__label"></label>
+																<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-home-2" class="form__input"></textarea>
+															</div>
+															<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+														</form>
+													</div>
+												</div>
+											</article>
+										</div>
+										<div class="body-user-reviews__button-wrapper">
+											<a href="#" class="body-user-reviews__button button button_border">Все рецензии Евгения</a>
+										</div>
+									</div>
+								</div>
+								<div class="profile-tabs__body profile-search"></div>
+							</div>
+
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__friends friends-profile-tabs tabs-profile-block">
+									<div class="friends-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block">
+											<h3>Ваши друзья</h3>
+										</div>
+										<div class="block-header__content content-block-header">
+											<nav data-tabs-titles class="content-block-header__navigation tabs-block-nav">
+												<button type="button" class="content-block-header__title _tab-active">Всего <span>15</span></button>
+												<button type="button" class="content-block-header__title">Входящие заявки <span>1</span></button>
+												<button type="button" class="content-block-header__title">Исходящие заявки <span>0</span></button>
+											</nav>
+										</div>
+									</div>
+									<div class="profile-tabs__notification notification-profile-tabs">
+										<div class="notification-profile-tabs__left left-notification-profile-tabs">
+											<div class="left-notification-profile-tabs__content">
+												<a href="#" class="left-notification-profile-tabs__avatar">
+													<div class="left-notification-profile-tabs__image">
+														<picture><source data-srcset="img/profile-block/friends/notif.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/notif.jpg" alt="Avatar"></picture>
+													</div>
+												</a>
+												<div class="left-notification-profile-tabs__text"><a href="#">Виктор Village</a> хочет добавить вас в друзья (2 общих друга)</div>
+											</div>
+										</div>
+										<div class="notification-profile-tabs__right right-notification-profile-tabs">
+											<button type="button" class="right-notification-profile-tabs__item">Принять</button>
+											<button type="button" class="right-notification-profile-tabs__item">Отклонить</button>
+											<button type="button" class="right-notification-profile-tabs__item">Заблокировать</button>
+											<button type="button" class="notification-profile-tabs__close">
+												<img src="img/close.svg" alt="Close">
+											</button>
+										</div>
+									</div>
+
+									<div data-tabs-body class="profile-tabs__body body-profile-tabs">
+										<div class="body-profile-tabs__items-wrapper">
+											<div class="body-profile-tabs__items">
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/01.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Dory Berg</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item body-profile-tabs__item_no-avatar item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar _icon-user"></a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Millowartu</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети вчера</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/03.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">LoIwQ48698</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети минуту назад</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/04.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Жека Картон</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/05.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Сударь</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети 21.02.2019</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/06.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">SHKIPER42</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/07.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Oktars Violk</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/08.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Хлоя Ватт</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Была в сети 2 часа назад</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/09.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Шон Форель</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Была в сети 3 дня назад</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/10.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">MishGUN</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети вчера</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/11.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/11.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Дэниэл Рэдклифф</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети 07.07.2011</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item body-profile-tabs__item_no-avatar item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar _icon-user"></a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Эльдар </a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/13.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/13.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">YtopLer</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети 2 дня назад</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/14.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/14.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Лук</a>
+														<div class="content-item-body-profile-tabs__label content-item-body-profile-tabs__label_offline">Был в сети 30 минут назад</div>
+													</div>
+												</article>
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/15.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/15.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">HORHORGOR</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-profile-tabs__items-wrapper">
+											<div class="body-profile-tabs__items">
+												<article class="body-profile-tabs__item item-body-profile-tabs">
+													<a href="#" class="item-body-profile-tabs__avatar">
+														<div class="item-body-profile-tabs__image-ibg">
+															<picture><source data-srcset="img/profile-block/friends/notif.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/friends/notif.jpg" alt="Avatar"></picture>
+														</div>
+													</a>
+													<div class="item-body-profile-tabs__content content-item-body-profile-tabs">
+														<a href="#" class="content-item-body-profile-tabs__name">Виктор Village</a>
+														<div class="content-item-body-profile-tabs__label">В сети</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-profile-tabs__items-wrapper">
+											<div class="body-profile-tabs__label">У вас нет исходящих заявок</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__reviews reviews-profile-tabs tabs-profile-block">
+									<div class="reviews-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block">
+											<h3>Ваши рецензии</h3>
+										</div>
+										<div class="block-header__content content-block-header">
+											<nav data-tabs-titles class="content-block-header__navigation tabs-block-nav">
+												<button type="button" class="content-block-header__title _tab-active">Всего<span>2</span></button>
+												<button type="button" class="content-block-header__title">Положительные<span>2</span></button>
+												<button type="button" class="content-block-header__title">Нейтральные<span>0</span></button>
+												<button type="button" class="content-block-header__title">Отрицательные<span>1</span></button>
+											</nav>
+										</div>
+									</div>
+									<div data-tabs-body class="reviews-profile-tabs__body body-reviews-profile-tabs">
+										<div class="body-reviews-profile-tabs__items-wrapper">
+											<div class="body-reviews-profile-tabs__items">
+												<article data-showmore="items" class="body-user-reviews review__item review__item_positive item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="movie-card.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/profile-block/reviews-user/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="movie-card.html" class="top-content-user-review__name">Бладшот</a>
+																	<time datetime="2020-04-14T10:14:00+02:00">14 апреля 2020 | 10:14</time>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>145</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>24</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Вин Дизель!!!!</h4>
+															</div>
+														</div>
+														<div class="body-item-review__content">
+															<p>История поведает о бравом морпехе Рэе, попавшим в руки злюкам-злодюкам, которого те успешно отправляют на встречу с создателем выстрелом в голову. Крупная корпорация RTS реанимирует тело морпеха, напичкав его нанороботами и превратив в универсального неубиваемого солдата. Рэй жаждет мести и приложит все усилия, чтобы добраться до своих обидчиков…</p>
+															<p>Фильм снят по комиксу от компании «Valiant», имеет возрастной рейтинг 16+ и в целом выглядит очень неплохо. На первый взгляд может показаться, что сюжет простенький и в точности следует по протоптанной дорожке своих многих собратьев из вселенной «Marvel» и «DC», пытаясь подсунуть избитую идею, напихав ленту под завязку одним лишь графоном. Но картина подразумевает под собой неплохую и интересную историю, как для жанра кинокомикса, притом пару раз даже предлагая сюжетные повороты!</p>
+															<p>Стычки с врагами, перестрелки, графика на отличном уровне и радуют глаз, а действие на экране выглядит зрелищно и динамично, не отпуская до самого финала. Отлично реализована задумка с нанороботами, умело штопающих дыры на теле главного героя и даже иногда собирая его чудесный лик из оборванных ошметков. В техническом плане придраться особо не к чему (отсутствие законов физики в данных фильмах не учитываем).</p>
+															<p>Из негатива можно выделить лишь непонятный плоский юмор в паре моментов и «умные» фразочки, которые словно бы списали из статусов в ВК. Типа: «Тебе нужно бороться, потому что борьба — это наша жизнь», тут же можно придумать с десяток аналогичных цитат на вроде «Если идет дождь, то на улице будут лужи», «Ты ходишь, а значит можешь ходить» и т. п. Но тут, как говорится, надо уметь отключать мозг.</p>
+															<p>Вывод: Вин Дизель уже был стритрейсером, в космосе воевал, супергероем стал, ждем его теперича в роли Бога.</p>
+															<p>В итоге в жанре комиксов фильм удался и выполняет все свои функции, помимо визуального развлечения, предлагает еще и интересную историю.</p>
+															<p>7 из 10</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+													<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+														<div class="answer-comments-block__body">
+															<form action="#" class="answer-comments-block__form">
+																<div class="form__group answer-comments-block-textarea">
+																	<label for="user-reviews-message-1" class="form__label"></label>
+																	<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-1" class="form__input"></textarea>
+																</div>
+																<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+															</form>
+														</div>
+													</div>
+												</article>
+												<article data-showmore="items" class="body-user-reviews review__item review__item_negative item-review">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="movie-card.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/profile-block/reviews-user/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="movie-card.html" class="top-content-user-review__name">Притяжение</a>
+																	<time datetime="2017-03-22T22:35:00+02:00">22 марта 2017 | 22:35</time>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>250</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Ну вы знаете Руса!</h4>
+															</div>
+														</div>
+														<div class="body-item-review__content">
+															<p>Даже не вторичный, а третичный сюжет, разваливающийся на части.</p>
+															<p>Картонные герои с неправдоподобными, утрированными эмоциями + мультяшный в своей нелепости фон из «солдат и народа».</p>
+															<p>Наличествует полный сет: группа отмороженных гопников, пубертатная дева, на раз-два обставляющая охрану секретных объектов и типа умного папу-полковника, любящего дочь, но не умеющего ее воспитывать, массовка в виде дебила-депутата, куча «тупых солдат», не способных справиться с группой агрессивных юнцов, ну и, наконец, «Максим Каммеррер», но на Земле — привет «Обитаемому острову».</p>
+															<p>Кстати, если кто видел бондарчуковское осмысление последнего — «Притяжение» куда хуже: тут у Бондарчука не было талантливого базиса, который даже ему не удалось в ТОТ раз до конца извазюкать в грязи.</p>
+															<p>В общем, я поражаюсь на людей, которые ставят ЭТОМУ высокие оценки. Две звезды- просто потому что я добрый.</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+													<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+														<div class="answer-comments-block__body">
+															<form action="#" class="answer-comments-block__form">
+																<div class="form__group answer-comments-block-textarea">
+																	<label for="user-reviews-message-2" class="form__label"></label>
+																	<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-2" class="form__input"></textarea>
+																</div>
+																<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+															</form>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-reviews-profile-tabs__items-wrapper">
+											<div class="body-reviews-profile-tabs__items">
+												<article data-showmore="items" class="body-user-reviews review__item review__item_positive item-review _showmore-active">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="movie-card.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/profile-block/reviews-user/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="movie-card.html" class="top-content-user-review__name">Бладшот</a>
+																	<time datetime="2020-04-14T10:14:00+02:00">14 апреля 2020 | 10:14</time>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>145</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>24</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Вин Дизель!!!!</h4>
+															</div>
+														</div>
+														<div class="body-item-review__content">
+															<p>История поведает о бравом морпехе Рэе, попавшим в руки злюкам-злодюкам, которого те успешно отправляют на встречу с создателем выстрелом в голову. Крупная корпорация RTS реанимирует тело морпеха, напичкав его нанороботами и превратив в универсального неубиваемого солдата. Рэй жаждет мести и приложит все усилия, чтобы добраться до своих обидчиков…</p>
+															<p>Фильм снят по комиксу от компании «Valiant», имеет возрастной рейтинг 16+ и в целом выглядит очень неплохо. На первый взгляд может показаться, что сюжет простенький и в точности следует по протоптанной дорожке своих многих собратьев из вселенной «Marvel» и «DC», пытаясь подсунуть избитую идею, напихав ленту под завязку одним лишь графоном. Но картина подразумевает под собой неплохую и интересную историю, как для жанра кинокомикса, притом пару раз даже предлагая сюжетные повороты!</p>
+															<p>Стычки с врагами, перестрелки, графика на отличном уровне и радуют глаз, а действие на экране выглядит зрелищно и динамично, не отпуская до самого финала. Отлично реализована задумка с нанороботами, умело штопающих дыры на теле главного героя и даже иногда собирая его чудесный лик из оборванных ошметков. В техническом плане придраться особо не к чему (отсутствие законов физики в данных фильмах не учитываем).</p>
+															<p>Из негатива можно выделить лишь непонятный плоский юмор в паре моментов и «умные» фразочки, которые словно бы списали из статусов в ВК. Типа: «Тебе нужно бороться, потому что борьба — это наша жизнь», тут же можно придумать с десяток аналогичных цитат на вроде «Если идет дождь, то на улице будут лужи», «Ты ходишь, а значит можешь ходить» и т. п. Но тут, как говорится, надо уметь отключать мозг.</p>
+															<p>Вывод: Вин Дизель уже был стритрейсером, в космосе воевал, супергероем стал, ждем его теперича в роли Бога.</p>
+															<p>В итоге в жанре комиксов фильм удался и выполняет все свои функции, помимо визуального развлечения, предлагает еще и интересную историю.</p>
+															<p>7 из 10</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+													<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+														<div class="answer-comments-block__body">
+															<form action="#" class="answer-comments-block__form">
+																<div class="form__group answer-comments-block-textarea">
+																	<label for="user-reviews-message-positive-1" class="form__label"></label>
+																	<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-positive-1" class="form__input"></textarea>
+																</div>
+																<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+															</form>
+														</div>
+													</div>
+												</article>
+												<article data-showmore="items" class="body-user-reviews review__item review__item_positive item-review _showmore-active">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="movie-card.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/profile-block/reviews-user/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/01.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="movie-card.html" class="top-content-user-review__name">Бладшот</a>
+																	<time datetime="2020-04-14T10:14:00+02:00">14 апреля 2020 | 10:14</time>
+																	<div class="top-content-user-review__type">Положительная рецензия</div>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>145</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>24</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Вин Дизель!!!!</h4>
+															</div>
+														</div>
+														<div class="body-item-review__content">
+															<p>История поведает о бравом морпехе Рэе, попавшим в руки злюкам-злодюкам, которого те успешно отправляют на встречу с создателем выстрелом в голову. Крупная корпорация RTS реанимирует тело морпеха, напичкав его нанороботами и превратив в универсального неубиваемого солдата. Рэй жаждет мести и приложит все усилия, чтобы добраться до своих обидчиков…</p>
+															<p>Фильм снят по комиксу от компании «Valiant», имеет возрастной рейтинг 16+ и в целом выглядит очень неплохо. На первый взгляд может показаться, что сюжет простенький и в точности следует по протоптанной дорожке своих многих собратьев из вселенной «Marvel» и «DC», пытаясь подсунуть избитую идею, напихав ленту под завязку одним лишь графоном. Но картина подразумевает под собой неплохую и интересную историю, как для жанра кинокомикса, притом пару раз даже предлагая сюжетные повороты!</p>
+															<p>Стычки с врагами, перестрелки, графика на отличном уровне и радуют глаз, а действие на экране выглядит зрелищно и динамично, не отпуская до самого финала. Отлично реализована задумка с нанороботами, умело штопающих дыры на теле главного героя и даже иногда собирая его чудесный лик из оборванных ошметков. В техническом плане придраться особо не к чему (отсутствие законов физики в данных фильмах не учитываем).</p>
+															<p>Из негатива можно выделить лишь непонятный плоский юмор в паре моментов и «умные» фразочки, которые словно бы списали из статусов в ВК. Типа: «Тебе нужно бороться, потому что борьба — это наша жизнь», тут же можно придумать с десяток аналогичных цитат на вроде «Если идет дождь, то на улице будут лужи», «Ты ходишь, а значит можешь ходить» и т. п. Но тут, как говорится, надо уметь отключать мозг.</p>
+															<p>Вывод: Вин Дизель уже был стритрейсером, в космосе воевал, супергероем стал, ждем его теперича в роли Бога.</p>
+															<p>В итоге в жанре комиксов фильм удался и выполняет все свои функции, помимо визуального развлечения, предлагает еще и интересную историю.</p>
+															<p>7 из 10</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+													<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+														<div class="answer-comments-block__body">
+															<form action="#" class="answer-comments-block__form">
+																<div class="form__group answer-comments-block-textarea">
+																	<label for="user-reviews-message-positive-2" class="form__label"></label>
+																	<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-positive-2" class="form__input"></textarea>
+																</div>
+																<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+															</form>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-reviews-profile-tabs__items-wrapper">
+											<div class="body-reviews-profile-tabs__items">
+												У вас нет нейтральных отзывов
+											</div>
+										</div>
+										<div class="body-reviews-profile-tabs__items-wrapper">
+											<div class="body-reviews-profile-tabs__items">
+												<article data-showmore="items" class="body-user-reviews review__item review__item_negative item-review _showmore-active">
+													<div class="item-review__header header-item-review">
+														<div class="header-item-review__user user-item-review">
+															<a href="movie-card.html" class="user-item-review__avatar">
+																<picture><source data-srcset="img/profile-block/reviews-user/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/reviews-user/02.jpg" alt="Avatar"></picture>
+															</a>
+															<div class="user-item-review__content content-user-review">
+																<div class="content-user-review__top top-content-user-review">
+																	<a href="movie-card.html" class="top-content-user-review__name">Притяжение</a>
+																	<time datetime="2017-03-22T22:35:00+02:00">22 марта 2017 | 22:35</time>
+																	<div class="top-content-user-review__type">Отрицательная рецензия</div>
+																</div>
+															</div>
+														</div>
+														<div class="header-item-review__actions slide-trailers-bottom__ratings actions-item-review rating-item">
+															<div class="rating-item__like item-action">
+																<button type="button" class="item-like _icon-like"></button>
+																<div class="rating-item__quantity">
+																	<span>250</span>
+																</div>
+															</div>
+															<div class="rating-item__dislike">
+																<button type="button" class="item-like _icon-like item-action"></button>
+																<div class="rating-item__quantity">
+																	<span>0</span>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="item-review-user-list-mobile"></div>
+
+													<div class="item-review__body body-item-review">
+														<div class="body-item-review__title-line title-line-body-review">
+															<div class="title-line-body-review__title">
+																<h4>Ну вы знаете Руса!</h4>
+															</div>
+														</div>
+														<div class="body-item-review__content">
+															<p>Даже не вторичный, а третичный сюжет, разваливающийся на части.</p>
+															<p>Картонные герои с неправдоподобными, утрированными эмоциями + мультяшный в своей нелепости фон из «солдат и народа».</p>
+															<p>Наличествует полный сет: группа отмороженных гопников, пубертатная дева, на раз-два обставляющая охрану секретных объектов и типа умного папу-полковника, любящего дочь, но не умеющего ее воспитывать, массовка в виде дебила-депутата, куча «тупых солдат», не способных справиться с группой агрессивных юнцов, ну и, наконец, «Максим Каммеррер», но на Земле — привет «Обитаемому острову».</p>
+															<p>Кстати, если кто видел бондарчуковское осмысление последнего — «Притяжение» куда хуже: тут у Бондарчука не было талантливого базиса, который даже ему не удалось в ТОТ раз до конца извазюкать в грязи.</p>
+															<p>В общем, я поражаюсь на людей, которые ставят ЭТОМУ высокие оценки. Две звезды- просто потому что я добрый.</p>
+														</div>
+														<div class="body-item-review__footer-line footer-line-body-review">
+															<div class="footer-line-body-review__actions">
+																<button data-showmore-button type="button" class="footer-line-body-review__comment _icon-comment">Комментировать</button>
+																<a href="#" class="footer-line-body-review__link _icon-link">Прямая ссылка</a>
+															</div>
+															<a href="#" data-popup="#popup-complaint" class="footer-line-body-review__complaint _icon-complaint">Пожаловться на спойлер</a>
+														</div>
+													</div>
+													<div data-showmore-content="0" class="comments-block__answer answer-comments-block">
+														<div class="answer-comments-block__body">
+															<form action="#" class="answer-comments-block__form">
+																<div class="form__group answer-comments-block-textarea">
+																	<label for="user-reviews-message-negative-1" class="form__label"></label>
+																	<textarea data-required data-error="Введите сообщение" placeholder="Введите сообщение" name="message" id="user-reviews-message-negative-1" class="form__input"></textarea>
+																</div>
+																<button type="submit" class="answer-comments-block__button button button_submit">Ответить</button>
+															</form>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__ratings ratings-profile-tabs tabs-profile-block">
+									<div class="ratings-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block block-header-nav">
+											<h3>Ваши оценки</h3>
+											<nav data-tabs-titles class="content-block-header__navigation">
+												<button type="button" class="content-block-header__title _tab-active">Все</button>
+												<button type="button" class="content-block-header__title">Положительные</button>
+												<button type="button" class="content-block-header__title">Отрицательные</button>
+											</nav>
+										</div>
+										<div data-da=".content-block-header-992px,991.98" class="block-header__content content-block-header">
+											<div class="content-block-header__selects">
+												<select name="form[]" data-class-modif="profile-film-ratings">
+													<option value="1" selected>Фильмы</option>
+													<option value="2">Сериалы</option>
+												</select>
+												<select name="form[]" data-class-modif="profile-film-genre">
+													<option value="1" selected>Все</option>
+													<option value="2">Биография</option>
+													<option value="3">Боевик</option>
+													<option value="4">Вестерн</option>
+													<option value="5">Война</option>
+													<option value="6">Для взрослых</option>
+													<option value="7">История</option>
+													<option value="8">Комедия</option>
+													<option value="9">Документальное</option>
+													<option value="10">Детектив</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="content-block-header-992px"></div>
+									<div data-tabs-body class="ratings-profile-tabs__body body-ratings-profile-tabs">
+										<div class="body-ratings-profile-tabs__items-wrapper all-ratings-block">
+											<div class="body-ratings-profile-tabs__items">
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".ratings-block-1-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/01.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content ratings-block-1-page-1-el-1 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Совокупность лжи</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Body of Lies</a>
+															<div class="content-left-item__genre">Боевик, триллер, драма, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".ratings-block-1-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label label-user right-item-actor-films__label_max">7.50</div>
+																<div class="label-item-actor-films__name name-user">Евгений</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.25</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.30</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".ratings-block-1-page-1-el-2, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/02.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content ratings-block-1-page-1-el-2 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Близнецы</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Still/Born</a>
+															<div class="content-left-item__genre">Ужасы, триллер, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".ratings-block-1-page-1-el-2, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label label-user right-item-actor-films__label_max">8.00</div>
+																<div class="label-item-actor-films__name name-user">Евгений</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.90</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.40</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".ratings-block-1-page-1-el-3, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/03.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content ratings-block-1-page-1-el-3 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Всевидящее око</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Eye in the Sky</a>
+															<div class="content-left-item__genre">Триллер, драма, военный, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".ratings-block-1-page-1-el-3, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label label-user right-item-actor-films__label_middle">6.70</div>
+																<div class="label-item-actor-films__name name-user">Евгений</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.25</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.30</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".ratings-block-1-page-1-el-4, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/04.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content ratings-block-1-page-1-el-4 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Проклятие</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Tarnation</a>
+															<div class="content-left-item__genre">Документальный, биография, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".ratings-block-1-page-1-el-4, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label label-user right-item-actor-films__label_super-max">9.30</div>
+																<div class="label-item-actor-films__name name-user">Евгений</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.10</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.40</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".ratings-block-1-page-1-el-5, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/05.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content ratings-block-1-page-1-el-5 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Нас не догонишь</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">You can't catch up with us</a>
+															<div class="content-left-item__genre">Триллер</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".ratings-block-1-page-1-el-5, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label label-user right-item-actor-films__label_min">4.30</div>
+																<div class="label-item-actor-films__name name-user">Евгений</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_middle">6.10</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.30</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-ratings-profile-tabs__items-wrapper positive-ratings-block">
+											<div class="body-ratings-profile-tabs__items">
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-1, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="img/media-block/trailers/02.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="img/media-block/trailers/02.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="xi8kc0iK6Ho" class="video-about__video-button">
+																		<img src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-2-page-1-el-1 content-left-item">
+															<div data-da=".ratings-right-block-2-page-1-el-1,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-2-page-1-el-1,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 23.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Тень звезды</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">The shadow of a star</a>
+															<div class="content-left-item__genre">Музыка, драма, мелодрама, детектив</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-2-page-1-el-1 right-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-1, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-2-page-1-el-1">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_without">--</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">71%</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-2, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="img/media-block/trailers/03.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="img/media-block/trailers/03.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="mQJmNlSTOIE" class="video-about__video-button">
+																		<img data-src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-2-page-1-el-2 content-left-item">
+															<div data-da=".ratings-right-block-2-page-1-el-2,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-2-page-1-el-2,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 23.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Закрытый сезон (сериал)</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Closed season</a>
+															<div class="content-left-item__genre">Детектив, мелодрама</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-2-page-1-el-2 right-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-2, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-2-page-1-el-2">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_without">--</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_middle">65%</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-3, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="img/media-block/trailers/04.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="img/media-block/trailers/04.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="BC9Kk8Np9-Y" class="video-about__video-button">
+																		<img data-src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-2-page-1-el-3 content-left-item">
+															<div data-da=".ratings-right-block-2-page-1-el-3,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-2-page-1-el-3,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 22.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>All Day and a Night</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">All Day and a Night</a>
+															<div class="content-left-item__genre">Драма</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-2-page-1-el-3 right-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-3, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-2-page-1-el-3">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_without">--</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_without">--</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-4, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="img/media-block/trailers/005.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="img/media-block/trailers/005.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="UZG73WV45B4" class="video-about__video-button">
+																		<img data-src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-2-page-1-el-4 content-left-item">
+															<div data-da=".ratings-right-block-2-page-1-el-4,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-2-page-1-el-4,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 22.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>По правде говоря (сериал)</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Truth Be Told</a>
+															<div class="content-left-item__genre">Триллер, драма, криминал, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-2-page-1-el-4 right-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-4, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-2-page-1-el-4">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_middle">6.80</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.10</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-5, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="img/media-block/trailers/006.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="img/media-block/trailers/006.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="RlfooqeZcdY" class="video-about__video-button">
+																		<img data-src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-2-page-1-el-5 content-left-item">
+															<div data-da=".ratings-right-block-2-page-1-el-5,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-2-page-1-el-5,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 22.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Платформа</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">El hoyo</a>
+															<div class="content-left-item__genre">Фантастика, триллер, драма, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-2-page-1-el-5 right-item-actor-films">
+														<div data-da=".ratings-block-2-page-1-el-5, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-2-page-1-el-5">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">8.15</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.00</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-ratings-profile-tabs__items-wrapper negative-ratings-block">
+											<div class="body-ratings-profile-tabs__items">
+												<article class="body-ratings-profile-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<div data-da=".ratings-block-3-page-1-el-1, 479, 0" class="video-about__poster">
+															<div class="video-about__video-ibg">
+																<div class="video-about__video-inner">
+																	<picture>
+																		<source srcset="https://img.youtube.com/vi/W6lO2n_hM-k/hqdefault.jpg" type="image/webp">
+																		<img class="video-about__video-content" data-src="https://img.youtube.com/vi/W6lO2n_hM-k/hqdefault.jpg" alt="Картинка">
+																	</picture>
+																	<button data-video-id="W6lO2n_hM-k" class="video-about__video-button">
+																		<img data-src="img/play.svg" alt="play">
+																	</button>
+																</div>
+															</div>
+														</div>
+
+														<div class="left-item-actor-films__content ratings-block-3-page-1-el-1 content-left-item">
+															<div data-da=".ratings-right-block-3-page-1-el-1,991.98" class="content-left-item__user-rating">
+																<div data-da=".ratings-labels-block-3-page-1-el-1,650,2" class="item-like _icon-like"></div>
+																<span>Оценка Евгения 20.04.2020</span>
+															</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Нас не догонишь</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">You can't catch up with us</a>
+															<div class="content-left-item__genre">Триллер</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right ratings-right-block-3-page-1-el-1 right-item-actor-films">
+														<div data-da=".ratings-block-3-page-1-el-1, 1250, 4" class="right-item-actor-films__labels ratings-labels-block-3-page-1-el-1">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.10</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.30</div>
+																<div class="label-item-actor-films__name">Ожидание</div>
+															</a>
+														</div>
+														<div class="right-item-actor-films__button-wrap">
+															<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+														</div>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__comments comments-profile-tabs tabs-profile-block">
+									<div class="comments-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block">
+											<h3>Ваши комментарии</h3>
+										</div>
+										<div class="block-header__content content-block-header">
+											<nav data-tabs-titles class="content-block-header__navigation tabs-block-nav">
+												<button type="button" class="content-block-header__title _tab-active">Все</button>
+												<button type="button" class="content-block-header__title"> Фильмы</button>
+												<button type="button" class="content-block-header__title">Персоны</button>
+												<button type="button" class="content-block-header__title">Новости</button>
+											</nav>
+										</div>
+									</div>
+									<div data-tabs-body class="comments-profile-tabs__body body-comments-profile-tabs">
+										<div class="body-comments-profile-tabs__items-wrapper">
+											<div class="body-comments-profile-tabs__items">
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/01.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-1-page-1-el-1 content-left-item">
+															<div class="content-left-item__label">Фильм</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Отверженная</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Каждый из нас понимает очевидную вещь: понимание сути ресурсосберегающих технологий, в своём классическом представлении, допускает внедрение форм воздействия.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 22.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-1, 767.98, 4" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-2, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/02.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-1-page-1-el-2 content-left-item">
+															<div class="content-left-item__label">Новость</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Почему «Титаник» — великое кино</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для переосмысления внешнеэкономических политик.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 16.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-2, 767.98, 4" class="right-item-actor-films__button button button_blue">Читать новость</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-3, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/03.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-1-page-1-el-3 content-left-item">
+															<div class="content-left-item__label">Новость</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Том Холланд решил на неделю завязать с выпивкой. Но Райан Рейнольдс прислал ему ящик джина</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Противоположная точка зрения подразумевает, что действия представителей оппозиции, инициированные исключительно синтетически, смешаны с не уникальными данными до степени совершенной неузнаваемости.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 15.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-3, 767.98, 4" class="right-item-actor-films__button button button_blue">Читать новость</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-4, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/04.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-1-page-1-el-4 content-left-item">
+															<div class="content-left-item__label">Персоны</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Боб Жантон</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Задача организации, в особенности же консультация с широким активом предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 14.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-1-page-1-el-4, 767.98, 4" class="right-item-actor-films__button button button_blue">Карточка актера</a>
+													</div>
+												</article>
+											</div>
+										</div>
+
+										<div class="body-comments-profile-tabs__items-wrapper">
+											<div class="body-comments-profile-tabs__items">
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-2-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/04.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-2-page-1-el-1 content-left-item">
+															<div class="content-left-item__label">Персоны</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Боб Жантон</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Задача организации, в особенности же консультация с широким активом предоставляет широкие возможности для позиций, занимаемых участниками в отношении поставленных задач.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 14.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-2-page-1-el-1, 767.98, 4" class="right-item-actor-films__button button button_blue">Карточка актера</a>
+													</div>
+												</article>
+											</div>
+										</div>
+
+										<div class="body-comments-profile-tabs__items-wrapper">
+											<div class="body-comments-profile-tabs__items">
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-3-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/03.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-3-page-1-el-1 content-left-item">
+															<div class="content-left-item__label">Новость</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Том Холланд решил на неделю завязать с выпивкой. Но Райан Рейнольдс прислал ему ящик джина</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Противоположная точка зрения подразумевает, что действия представителей оппозиции, инициированные исключительно синтетически, смешаны с не уникальными данными до степени совершенной неузнаваемости.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 15.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-3-page-1-el-1, 767.98, 4" class="right-item-actor-films__button button button_blue">Читать новость</a>
+													</div>
+												</article>
+											</div>
+										</div>
+
+										<div class="body-comments-profile-tabs__items-wrapper">
+											<div class="body-comments-profile-tabs__items">
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-4-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/comments/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/comments/02.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content comments-block-4-page-1-el-1 content-left-item">
+															<div class="content-left-item__label">Новость</div>
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Почему «Титаник» — великое кино</h4>
+															</a>
+															<div class="content-left-item__text">
+																<p>
+																	Разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для переосмысления внешнеэкономических политик.
+																</p>
+															</div>
+															<div class="content-left-item__data">Комментарий Евгения 16.04.2023</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="movie-card.html" data-da=".comments-block-4-page-1-el-1, 767.98, 4" class="right-item-actor-films__button button button_blue">Читать новость</a>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__list-films list-films-profile-tabs tabs-profile-block">
+									<div class="persons-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block">
+											<h3>Список фильмов</h3>
+										</div>
+										<div class="block-header__content content-block-header">
+											<nav data-tabs-titles class="content-block-header__navigation tabs-block-nav">
+												<button type="button" class="content-block-header__title _tab-active">Все</button>
+												<button type="button" class="content-block-header__title">Любимые</button>
+												<button type="button" class="content-block-header__title">Ожидаемые</button>
+												<button type="button" class="content-block-header__title">Избранное</button>
+											</nav>
+										</div>
+									</div>
+									<div data-tabs-body class="list-films-tabs__body body-list-films-tabs">
+										<div class="body-list-films-tabs__items-wrapper">
+											<div class="body-list-films-tabs__items">
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-1-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/01.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-1-page-1-el-1 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Совокупность лжи (2008)</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Body of Lies</a>
+															<div class="content-left-item__genre">Боевик, триллер, драма, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-1-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.40</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.10</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-1-page-1-el-2, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/02.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-1-page-1-el-2 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Близнецы</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Still/Born</a>
+															<div class="content-left-item__genre">Ужасы, триллер, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-1-page-1-el-2, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.90</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.40</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-1-page-1-el-3, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/03.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-1-page-1-el-3 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Всевидящее око</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Eye in the Sky</a>
+															<div class="content-left-item__genre">Триллер, драма, военный, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-1-page-1-el-3, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.25</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.30</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-1-page-1-el-4, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/04.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-1-page-1-el-4 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Проклятие</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Tarnation</a>
+															<div class="content-left-item__genre">Документальный, биография, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-1-page-1-el-4, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.40</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.10</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-list-films-tabs__items-wrapper">
+											<div class="body-list-films-tabs__items">
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-2-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/04.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-2-page-1-el-1 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Проклятие</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Tarnation</a>
+															<div class="content-left-item__genre">Документальный, биография, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-2-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.40</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.10</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-list-films-tabs__items-wrapper">
+											<div class="body-list-films-tabs__items">
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-3-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/03.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-3-page-1-el-1 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Всевидящее око</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Eye in the Sky</a>
+															<div class="content-left-item__genre">Триллер, драма, военный, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-3-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.25</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_max">7.30</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-list-films-tabs__items-wrapper">
+											<div class="body-list-films-tabs__items">
+												<article class="body-list-films-tabs__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="movie-card.html" data-da=".list-films-block-4-page-1-el-1, 380, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/list-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/list-films/02.jpg" alt="Poster"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content list-films-block-4-page-1-el-1 content-left-item">
+															<a href="movie-card.html" class="content-left-item__title">
+																<h4>Близнецы</h4>
+															</a>
+															<a href="movie-card.html" class="content-left-item__title-translate">Still/Born</a>
+															<div class="content-left-item__genre">Ужасы, триллер, ...</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<div data-da=".list-films-block-4-page-1-el-1, 991.98, 4" class="right-item-actor-films__labels">
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.90</div>
+																<div class="label-item-actor-films__name">Kinoarea</div>
+															</a>
+															<a href="#" class="right-item-actor-films__label-block label-item-actor-films">
+																<div class="right-item-actor-films__label right-item-actor-films__label_5">5.40</div>
+																<div class="label-item-actor-films__name">IMDb</div>
+															</a>
+														</div>
+														<a href="movie-card.html" class="right-item-actor-films__button button button_blue">Карточка фильма</a>
+													</div>
+												</article>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="profile-tabs__body">
+								<div data-tabs class="profile-tabs__persons persons-profile-tabs tabs-profile-block">
+									<div class="persons-profile-tabs__block-header block-header">
+										<div class="block-header__title title-block">
+											<h3>Список персон</h3>
+										</div>
+										<div class="block-header__content content-block-header">
+											<nav data-tabs-titles class="content-block-header__navigation tabs-block-nav">
+												<button type="button" class="content-block-header__title _tab-active">Все</button>
+												<button type="button" class="content-block-header__title">Любимые</button>
+												<button type="button" class="content-block-header__title">Избранное</button>
+											</nav>
+										</div>
+									</div>
+
+									<div data-tabs-body class="persons-tabs__body body-persons-tabs">
+										<div class="body-persons-tabs__items-wrapper">
+											<div class="body-persons-tabs__items">
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/persons/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/01.jpg" alt="Decor"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content persons-block-1-page-1-el-1 content-left-item">
+															<a href="actor-card.html" class="content-left-item__title">Джонни Депп</a>
+															<a href="actor-card.html" class="content-left-item__title-translate">Johnny Depp</a>
+															<div class="content-left-item__activity content-left-item__genre">Актер, Продюсер, Режиссер, Сценарист</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-1, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-2, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/persons/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/02.jpg" alt="Decor"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content persons-block-1-page-1-el-2 content-left-item">
+															<a href="actor-card.html" class="content-left-item__title">Том Хэнкс</a>
+															<a href="actor-card.html" class="content-left-item__title-translate">Tom Hanks</a>
+															<div class="content-left-item__activity content-left-item__genre">Актер, Продюсер, Режиссер, Сценарист</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-2, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-3, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/persons/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/03.jpg" alt="Decor"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content persons-block-1-page-1-el-3 content-left-item">
+															<a href="actor-card.html" class="content-left-item__title">Гэри Синиз</a>
+															<a href="actor-card.html" class="content-left-item__title-translate">Gary Sinise</a>
+															<div class="content-left-item__activity content-left-item__genre">Актер, Продюсер, Режиссер, Сценарист</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-3, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+													</div>
+												</article>
+												<article class="body-persons__item body-actor-films__item item-actor-films">
+													<div class="item-actor-films__left left-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-4, 479.98, 0" class="left-item-actor-films__poster">
+															<div class="left-item-actor-films__image-ibg">
+																<picture><source data-srcset="img/profile-block/persons/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/04.jpg" alt="Decor"></picture>
+															</div>
+														</a>
+														<div class="left-item-actor-films__content persons-block-1-page-1-el-4 content-left-item">
+															<a href="actor-card.html" class="content-left-item__title">Жан Рено</a>
+															<a href="actor-card.html" class="content-left-item__title-translate">Jean Reno</a>
+															<div class="content-left-item__activity content-left-item__genre">Актер</div>
+														</div>
+													</div>
+													<div class="item-actor-films__right right-item-actor-films">
+														<a href="actor-card.html" data-da=".persons-block-1-page-1-el-4, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+													</div>
+												</article>
+											</div>
+										</div>
+										<div class="body-persons-tabs__items-wrapper">
+											<article class="body-persons__item body-actor-films__item item-actor-films">
+												<div class="item-actor-films__left left-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-2-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+														<div class="left-item-actor-films__image-ibg">
+															<picture><source data-srcset="img/profile-block/persons/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/02.jpg" alt="Decor"></picture>
+														</div>
+													</a>
+													<div class="left-item-actor-films__content persons-block-2-page-1-el-1 content-left-item">
+														<a href="actor-card.html" class="content-left-item__title">Том Хэнкс</a>
+														<a href="actor-card.html" class="content-left-item__title-translate">Tom Hanks</a>
+														<div class="content-left-item__activity content-left-item__genre">Актер, Продюсер, Режиссер, Сценарист</div>
+													</div>
+												</div>
+												<div class="item-actor-films__right right-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-2-page-1-el-1, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+												</div>
+											</article>
+											<article class="body-persons__item body-actor-films__item item-actor-films">
+												<div class="item-actor-films__left left-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-2-page-1-el-2, 479.98, 0" class="left-item-actor-films__poster">
+														<div class="left-item-actor-films__image-ibg">
+															<picture><source data-srcset="img/profile-block/persons/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/03.jpg" alt="Decor"></picture>
+														</div>
+													</a>
+													<div class="left-item-actor-films__content persons-block-2-page-1-el-2 content-left-item">
+														<a href="actor-card.html" class="content-left-item__title">Гэри Синиз</a>
+														<a href="actor-card.html" class="content-left-item__title-translate">Gary Sinise</a>
+														<div class="content-left-item__activity content-left-item__genre">Актер, Продюсер, Режиссер, Сценарист</div>
+													</div>
+												</div>
+												<div class="item-actor-films__right right-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-2-page-1-el-2, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+												</div>
+											</article>
+										</div>
+										<div class="body-persons-tabs__items-wrapper">
+											<article class="body-persons__item body-actor-films__item item-actor-films">
+												<div class="item-actor-films__left left-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-3-page-1-el-1, 479.98, 0" class="left-item-actor-films__poster">
+														<div class="left-item-actor-films__image-ibg">
+															<picture><source data-srcset="img/profile-block/persons/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/profile-block/persons/04.jpg" alt="Decor"></picture>
+														</div>
+													</a>
+													<div class="left-item-actor-films__content persons-block-3-page-1-el-1 content-left-item">
+														<a href="actor-card.html" class="content-left-item__title">Жан Рено</a>
+														<a href="actor-card.html" class="content-left-item__title-translate">Jean Reno</a>
+														<div class="content-left-item__activity content-left-item__genre">Актер</div>
+													</div>
+												</div>
+												<div class="item-actor-films__right right-item-actor-films">
+													<a href="actor-card.html" data-da=".persons-block-3-page-1-el-1, 767.98, 3" class="right-item-actor-films__button button button_blue">Карточка актёра</a>
+												</div>
+											</article>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__socials socials">
+						<a href="https://vk.com/" target="_blank" class="body-footer__social _icon-vk"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="body-footer__social _icon-instagram"></a>
+						<a href="https://www.facebook.com/" target="_blank" class="body-footer__social _icon-facebook"></a>
+						<a href="https://twitter.com/i/flow/login" target="_blank" class="body-footer__social _icon-x"></a>
+					</div>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Афиша</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+								<li class="menu-footer__item"><a href="actor-card.html" class="menu-footer__link">Персоны</a></li>
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Каталог фильмов</a></li>
+								<li class="menu-footer__item"><a href="search-results.html" class="menu-footer__link">Рейтинги</a></li>
+								<li class="menu-footer__item"><a href="feedback.html" class="menu-footer__link">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__rights">2020 © Kinoarea. Все права защищены</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<button type="button" class="button-up _hide _icon-arrow-long-top"></button>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Войти</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="nameLoginFormLogin" type="text" name="login" placeholder="Логин, почта или телефон" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Неверный пароль" id="namePasswordFormLogin" type="password" name="password" placeholder="Ваш пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Войти</button>
+							<a href="#" data-popup="#popup-register" class="body-popup__button-transparent button">Зарегистрироваться</a>
+						</div>
+						<a href="#" data-popup="#popup-recovery" class="body-popup__recovery">Восстановить пароль</a>
+						<div class="body-popup__socials socials">
+							<a href="" target="_blank" class="header__social _icon-vk"></a>
+							<a href="" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="popup-register" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Зарегистрироваться</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите имя" id="nameFormRegister" type="text" name="name" placeholder="Имя" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите фамилию" id="surnameFormRegister" type="text" name="surname" placeholder="Фамилия" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="loginFormRegister" type="text" name="login" placeholder="Придумайте логин" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordFormRegister" type="password" name="password" placeholder="Придумайте пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordRepitFormRegister" type="password" name="password" placeholder="Повторите пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите номер телефона" id="telFormRegister" type="tel" name="telephone" placeholder="Номер телефона" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required="email" data-error="Неправильная электронная почта" id="emailFormRegister" type="text" name="email" placeholder="Электронная почта" class="form__input input">
+							</div>
+						</div>
+						<div class="body-popup__consent">
+							<div class="form__group">
+								<label for="formAgreementRegistrationPolicy" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPolicy" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на условия <a href="#">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<div class="form__group">
+								<label for="formAgreementRegistrationPersonalData" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPersonalData" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на обработку персональных данных</span>
+								</label>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+					<form data-dev action="#" data-popup-message="#popup-recovery-only-password" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="body-popup__line-top">
+								<div class="form__group">
+									<input data-required data-error="Неверный номер теелфона или почта" id="loginFormRecovery" type="text" name="login" placeholder="Почта или номер телефона" class="form__input input">
+								</div>
+							</div>
+							<div class="body-popup__line-bottom">
+								<button type="submit" class="body-popup__button button button_blue">Отправить</button>
+								<div class="form__group">
+									<input data-required data-error="Неверный код" id="codeFormRecovery" type="text" name="confirmation code" placeholder="Полученный код" class="form__input input">
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Далее</button>
+						</div>
+						<a href="#" class="body-popup__recovery"></a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery-only-password" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+
+
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecovery" type="password" name="recovery-only-password" placeholder="Придумайте новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecoveryСonfirm" type="password" name="recovery-only-password" placeholder="Повторите новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Жалоба</h2>
+					</div>
+					<form action="#" data-dev data-popup-message="#popup-complaint-message" class="body-popup__form form">
+						<div class="body-popup__textarea">
+							<div class="form__field-counter">
+								<div class="form__group">
+									<textarea data-required data-error="Введите сообщение" name="message" id="formComplaint" maxlength="100" class="form__input txt-item" placeholder="Кратко опишите суть проблемы"></textarea>
+								</div>
+								<div class="form-group-counter">Осталось <span></span> символов</div>
+							</div>
+
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__message">
+						<p>
+							Спасибо, что помогаете нам делать платформу лучше!
+						</p>
+						<p>
+							Мы обязательно примем необходимые меры в отношении нарушителя.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240114173932"></script>
+</body>
+
+</html>

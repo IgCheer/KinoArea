@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>График премьер фильмов</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240114173932">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper page-schedule wrapper_registered">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="home.html" class="header__logo">
+							<img data-src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="header__socials socials">
+							<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+							<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="schedule.html" class="menu__link">Афиша</a></li>
+								<li class="menu__item"><a href="media.html" class="menu__link">Медиа</a></li>
+								<li class="menu__item"><a href="movie-card.html" class="menu__link">Фильмы</a></li>
+								<li class="menu__item"><a href="actor-card.html" class="menu__link">Актёры</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="compilations.html" class="menu__link">Подборки</a></li>
+								<li class="menu__item"><a href="genre.html" class="menu__link">Категории</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search">
+							<button type="button" class="form-search-header__icon _icon-search"></button>
+							<div class="body-main-header__search search-header">
+								<form action="#" class="search-header__form form-search-header">
+									<input autocomplete="off" type="text" name="search" placeholder="Поиск" class="form-search-header__input">
+									<a href="advanced-search.html" class="form-search-header__settings _icon-equalizer"></a>
+									<button type="submit" class="form-search-header__button _icon-search"></button>
+								</form>
+							</div>
+						</div>
+						<div class="actions-header__user user-header">
+							<select name="form[name-user]" data-class-modif="user">
+								<option value="1" selected>Евгений</option>
+								<option value="2">Иван</option>
+								<option value="3">Александр</option>
+								<option value="4">Алина</option>
+								<option value="5">Василиса</option>
+							</select>
+							<a href="profile.html" class="user-header__avatar">
+								<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/avatar.jpg" alt="Avatar"></picture>
+							</a>
+						</div>
+						<div class="actions-header__login login-actions-header">
+							<a href="#" data-popup="#popup-login" class="login-actions-header__button button button_blue">Войти</a>
+						</div>
+						<div class="menu-icon__wrapper">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_schedule">
+			<div class="page__header">
+				<div class="page__container">
+					<div class="page__content">
+						<div class="page__title title">
+							<h2>График премьер фильмов</h2>
+						</div>
+						<nav class="block__breadcrumbs breadcrumbs">
+							<ul class="breadcrumbs__list">
+								<li class="breadcrumbs__item">
+									<a href="home.html" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<span class="breadcrumbs__current">Афиша</span>
+								</li>
+							</ul>
+						</nav>
+						<div class="page__text">
+							<p>Также как дальнейшее развитие различных форм деятельности, в своём классическом представлении, допускает внедрение первоочередных требований. Современные технологии достигли такого уровня, что внедрение современных методик предполагает независимые способы реализации стандартных подходов. Сторонники тоталитаризма в науке могут быть объявлены нарушающими общечеловеческие нормы этики и морали.</p>
+						</div>
+					</div>
+					<div class="page__dropdown dropdown-lists">
+						<select multiple name="form[schedule-genre]" data-class-modif="schedule-genre">
+							<option value="">Жанр фильма</option>
+							<option value="animation">Анимация</option>
+							<option value="biography">Биография</option>
+							<option value="action-movie">Боевик</option>
+							<option value="western">Вестерн</option>
+							<option value="war">Война</option>
+							<option value="detective">Детектив</option>
+							<option value="documentary">Документальный</option>
+							<option value="drama">Драма</option>
+							<option value="history">История</option>
+							<option value="comedy">Комедия</option>
+						</select>
+						<select multiple data-search name="form[schedule-data]" data-class-modif="schedule-data">
+							<option value="" selected>Дата выхода</option>
+							<option value="until 2015">До 2015</option>
+							<option value="January - June 2015">Январь - Июнь 2015</option>
+							<option value="July - December 2015">Июль - Декабрь 2015</option>
+							<option value="January - June 2016">Январь - Июнь 2016</option>
+							<option value="July - December 2016">Июль - Декабрь 2016</option>
+							<option value="January - June 2017">Январь - Июнь 2017</option>
+							<option value="July - December 2017">Июль - Декабрь 2017</option>
+							<option value="January - June 2018">Январь - Июнь 2018</option>
+							<option value="July - December 2018">Июль - Декабрь 2018</option>
+							<option value="January - June 2019">Январь - Июнь 2019</option>
+							<option value="July - December 2019">Июль - Декабрь 2019</option>
+							<option value="January - June 2020">Январь - Июнь 2020</option>
+							<option value="July - December 2020">Июль - Декабрь 2020</option>
+							<option value="January - June 2021">Январь - Июнь 2021</option>
+							<option value="July - December 2021">Июль - Декабрь 2021</option>
+							<option value="January - June 2022">Январь - Июнь 2022</option>
+							<option value="July - December 2022">Июль - Декабрь 2022</option>
+							<option value="January - June 2023">Январь - Июнь 2023</option>
+							<option value="July - December 2023">Июль - Декабрь 2023</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule" class="schedule__body body-schedule goto-block">
+				<div class="body-schedule__container">
+					<div data-page-content="schedule" id="schedulepage1">
+						<div class="items-body-schedule__wrapper">
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">22 апреля 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">80%</div>
+											<div class="card-film__label card-film__label_low">5.2</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Гудбай, Америка</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Мелодрама, комедия</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">75%</div>
+											<div class="card-film__label card-film__label_middle">6.2</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Добрый человек из Сезуана</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">23 апреля 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">95%</div>
+											<div class="card-film__label card-film__label_max">7.8</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Господин Никто</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фантастика, мелодрама, фэнтези, драма</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_min item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">52%</div>
+											<div class="card-film__label card-film__label_middle">6.7</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Мисс Плохое поведение</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Комедия, драма, история</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">80%</div>
+											<div class="card-film__label card-film__label_max">7.6</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/05.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Прекрасные лжецы</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, комедия</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">30 апреля 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">75%</div>
+											<div class="card-film__label card-film__label_low">5.8</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/06.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Морские паразиты</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Ужасы, фантастика</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">65%</div>
+											<div class="card-film__label card-film__label_max">7.0</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/07.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>О бесконечности</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">95%</div>
+											<div class="card-film__label card-film__label_max">7.5</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/08.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Белка и Стрелка: Карибская тайна</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Мультфильм, комедия, приключения, семейный</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_min item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">55%</div>
+											<div class="card-film__label card-film__label_max">8.5</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/09.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Запретная зона</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Триллер</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">74%</div>
+											<div class="card-film__label card-film__label_max">8.4</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/10.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Дэвид Боуи: История человека со звезд</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, биография</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">79%</div>
+											<div class="card-film__label card-film__label_max">7.1</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/11.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/11.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Запретная кухня</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Семейный</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">4 мая 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">80%</div>
+											<div class="card-film__label card-film__label_middle">6.2</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/12.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/12.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Подольские курсанты</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Военный, драма, история</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">7 мая 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">68%</div>
+											<div class="card-film__label card-film__label_max">8.0</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/19.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/19.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>8 с половиной</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">94%</div>
+											<div class="card-film__label card-film__label_max">7.0</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/13.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/13.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Выбивая долги</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Триллер, драма, криминал</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_min item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">40%</div>
+											<div class="card-film__label card-film__label_low">4.7</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/14.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/14.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Агент Лев</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Комедия</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">73%</div>
+											<div class="card-film__label card-film__label_middle">6.2</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/15.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/15.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Вечность между нами</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фэнтези, драма, мелодрама</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">87%</div>
+											<div class="card-film__label card-film__label_max">8.4</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/16.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/16.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Клятва</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Биография, военный, драма, история</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">67%</div>
+											<div class="card-film__label card-film__label_max">7.3</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/17.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/17.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Матера – город из камня</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Документальный</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">79%</div>
+											<div class="card-film__label card-film__label_middle">6.1</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/18.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/18.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Приключения котёнка Пелле</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Мультфильм</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div data-page-content="schedule" id="schedulepage2">
+						<div class="items-body-schedule__wrapper">
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">22 мая 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">95%</div>
+											<div class="card-film__label card-film__label_max">7.8</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Господин Никто</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Фантастика, мелодрама, фэнтези, драма</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_min item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">52%</div>
+											<div class="card-film__label card-film__label_middle">6.7</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Мисс Плохое поведение</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Комедия, драма, история</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div data-page-content="schedule" id="schedulepage3">
+						<div class="items-body-schedule__wrapper">
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">22 июня 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">80%</div>
+											<div class="card-film__label card-film__label_max">7.6</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/05.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Прекрасные лжецы</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, комедия</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">75%</div>
+											<div class="card-film__label card-film__label_low">5.8</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/06.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Морские паразиты</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Ужасы, фантастика</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div data-page-content="schedule" id="schedulepage4">
+						<div class="items-body-schedule__wrapper">
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">11 июля 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">65%</div>
+											<div class="card-film__label card-film__label_max">7.0</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/07.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>О бесконечности</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_max item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">95%</div>
+											<div class="card-film__label card-film__label_max">7.5</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/08.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Белка и Стрелка: Карибская тайна</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Мультфильм, комедия, приключения, семейный</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div data-page-content="schedule" id="schedulepage5">
+						<div class="items-body-schedule__wrapper">
+							<div class="body-schedule__block block-body-schedule">
+								<div class="block-body-schedule__date">18 августа 2023</div>
+								<div class="block-body-schedule__items">
+									<article class="block-body-schedule__item body-hero__item_min item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">55%</div>
+											<div class="card-film__label card-film__label_max">8.5</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/09.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/09.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Запретная зона</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Триллер</p>
+											</div>
+										</div>
+									</article>
+									<article class="block-body-schedule__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__labels">
+											<div class="card-film__label">74%</div>
+											<div class="card-film__label card-film__label_max">8.4</div>
+										</div>
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/schedule/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/schedule/10.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Дэвид Боуи: История человека со звезд</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>Драма, биография</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pagination">
+						<ul class="pagination__body">
+							<li class="btn pagging-prev prev _icon-arrow-long-top"></li>
+							<li class="num active"><span>1</span></li>
+							<li class="num"><span>2</span></li>
+							<li class="dots"><span>...</span></li>
+							<li class="num"><span>4</span></li>
+							<li class="btn pagging-next next _icon-arrow-long-top"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<section class="subscribe">
+				<div class="subscribe__body body-subscribe">
+					<div class="body-subscribe__logo">
+						<img data-src="img/logo2.svg" alt="Logo">
+					</div>
+					<form action="#" class="subscribe__form form-subscribe">
+						<div class="form-subscribe__content">
+							<div class="form-subscribe__title title">
+								<h3>Подпишитесь на E-mail рассылку</h3>
+							</div>
+							<div class="form-subscribe__text">
+								<p>Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите бесплатную E-mail рассылку!</p>
+							</div>
+						</div>
+						<div class="form-subscribe__request request-form-subscribe">
+							<input data-required="email" autocomplete="off" type="text" name="subscribe" data-error="Введите правильный E-mail" placeholder="Введите свой E-mail адрес" class="input form-input">
+							<button type="submit" class="request-form-subscribe__button button">Подписаться</button>
+						</div>
+						<div class="form-subscribe__privacy">
+							<div class="form__group">
+								<label for="formAgreement" class="custom-label">
+									<input checked data-required id="formAgreement" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<div>Соглашаюсь на условия <a href="#" class="privacy-link">политики конфиденциальности</a></div>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__socials socials">
+						<a href="https://vk.com/" target="_blank" class="body-footer__social _icon-vk"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="body-footer__social _icon-instagram"></a>
+						<a href="https://www.facebook.com/" target="_blank" class="body-footer__social _icon-facebook"></a>
+						<a href="https://twitter.com/i/flow/login" target="_blank" class="body-footer__social _icon-x"></a>
+					</div>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Афиша</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+								<li class="menu-footer__item"><a href="actor-card.html" class="menu-footer__link">Персоны</a></li>
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Каталог фильмов</a></li>
+								<li class="menu-footer__item"><a href="search-results.html" class="menu-footer__link">Рейтинги</a></li>
+								<li class="menu-footer__item"><a href="feedback.html" class="menu-footer__link">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__rights">2020 © Kinoarea. Все права защищены</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<button type="button" class="button-up _hide _icon-arrow-long-top"></button>
+	</div>
+	<script src="js/app.min.js?_v=20240114173932"></script>
+</body>
+
+</html>

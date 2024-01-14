@@ -1,0 +1,3166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Kinoarea - онлайн-кинотеатр</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240114173932">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper wrapper_unregistered">
+		<header class="header">
+			<div class="header__wrapper">
+				<div class="header__container">
+					<div class="header__logo-block">
+						<a href="home.html" class="header__logo">
+							<img data-src="img/logo.svg" alt="Logo">
+						</a>
+						<div class="header__socials socials">
+							<a href="https://vk.com/" target="_blank" class="header__social _icon-vk"></a>
+							<a href="https://www.instagram.com/" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="https://www.facebook.com/" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="https://twitter.com/i/flow/login" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</div>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="schedule.html" class="menu__link">Афиша</a></li>
+								<li class="menu__item"><a href="media.html" class="menu__link">Медиа</a></li>
+								<li class="menu__item"><a href="movie-card.html" class="menu__link">Фильмы</a></li>
+								<li class="menu__item"><a href="actor-card.html" class="menu__link">Актёры</a></li>
+								<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+								<li class="menu__item"><a href="compilations.html" class="menu__link">Подборки</a></li>
+								<li class="menu__item"><a href="genre.html" class="menu__link">Категории</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header__actions actions-header">
+						<div class="actions-header__search">
+							<button type="button" class="form-search-header__icon _icon-search"></button>
+							<div class="body-main-header__search search-header">
+								<form action="#" class="search-header__form form-search-header">
+									<input autocomplete="off" type="text" name="search" placeholder="Поиск" class="form-search-header__input">
+									<a href="advanced-search.html" class="form-search-header__settings _icon-equalizer"></a>
+									<button type="submit" class="form-search-header__button _icon-search"></button>
+								</form>
+							</div>
+						</div>
+						<div class="actions-header__user user-header">
+							<select name="form[name-user]" data-class-modif="user">
+								<option value="1" selected>Евгений</option>
+								<option value="2">Иван</option>
+								<option value="3">Александр</option>
+								<option value="4">Алина</option>
+								<option value="5">Василиса</option>
+							</select>
+							<a href="profile.html" class="user-header__avatar">
+								<picture><source data-srcset="img/avatar.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/avatar.jpg" alt="Avatar"></picture>
+							</a>
+						</div>
+						<div class="actions-header__login login-actions-header">
+							<a href="#" data-popup="#popup-login" class="login-actions-header__button button button_blue">Войти</a>
+						</div>
+						<div class="menu-icon__wrapper">
+							<button type="button" class="menu__icon icon-menu"><span></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page page_unregistered">
+			<section class="hero">
+				<div data-tabs data-tabs-animate="800" class="hero__container">
+					<div class="hero__block-header block-header block-header_decor">
+						<div class="block-header__title">
+							<h3>Сейчас в кино</h3>
+						</div>
+						<div class="block-header__decor"></div>
+						<div class="block-header__content">
+							<div class="content-block-header">
+								<nav data-tabs-titles class="content-block-header__navigation">
+									<button type="button" class="content-block-header__title _tab-active">Все</button>
+									<button type="button" class="content-block-header__title">Боевики</button>
+									<button type="button" class="content-block-header__title">Приключения</button>
+									<button type="button" class="content-block-header__title">Комедии</button>
+									<button type="button" class="content-block-header__title">Фантастика</button>
+									<button type="button" class="content-block-header__title">Триллеры</button>
+									<button type="button" class="content-block-header__title">Драма</button>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div data-tabs-body class="hero__body body-hero">
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Побег из Претории</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Триллер</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.50</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/02.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джокер</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Триллер, драма, криминал</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/03.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Звёздные войны: Скайуокер. Восход</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, фэнтези, боевик, приключения</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.00</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джентльмены</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.10</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/05.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Ford против Ferrari</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Биография, спорт, драма, боевик</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_min item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">4.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/06.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>3022</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, триллер</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.20</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/07.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, криминал, комедия</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/08.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Плохие парни навсегда</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/03.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Звёздные войны: Скайуокер. Восход</h5>
+										</a>
+										<div class="card-filmo__desc">
+											<p>Фантастика, фэнтези, боевик, приключения</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.00</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джентльмены</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.10</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/05.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/05.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Ford против Ferrari</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Биография, спорт, драма, боевик</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.20</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/07.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, криминал, комедия</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/08.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Плохие парни навсегда</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/03.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Звёздные войны: Скайуокер. Восход</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, фэнтези, боевик, приключения</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.00</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джентльмены</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.20</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/07.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/07.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Хищные птицы: Потрясающая история Харли Квинн</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, криминал, комедия</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/08.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/08.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Плохие парни навсегда</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Боевик, комедия, криминал</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/03.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Звёздные войны: Скайуокер. Восход</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, фэнтези, боевик, приключения</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_min item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">4.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/06.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>3022</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, триллер</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_middle item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">6.70</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Побег из Претории</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Триллер</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.50</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/02.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джокер</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Триллер, драма, криминал</p>
+										</div>
+									</div>
+								</article>
+								<article class="body-hero__item body-hero__item_min item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">4.90</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/06.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/06.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>3022</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Фантастика, триллер</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-hero__wrapper">
+							<div class="body-hero__items">
+								<article class="body-hero__item body-hero__item_max item-hero card-film">
+									<div class="card-film__labels">
+										<div class="card-film__label">8.50</div>
+									</div>
+									<div class="card-film__wrapper">
+										<div class="card-film__image-block">
+											<a href="movie-card.html" class="card-film__image-ibg">
+												<picture><source data-srcset="img/hero-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/02.jpg" alt="Image"></picture>
+											</a>
+											<div class="card-film__about">
+												<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+											</div>
+										</div>
+										<a href="movie-card.html" class="card-film__title">
+											<h5>Джокер</h5>
+										</a>
+										<div class="card-film__desc">
+											<p>Триллер, драма, криминал</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="body-hero__footer">
+						<div class="wr">
+							<a href="schedule.html" class="body-hero__button button button_all">Все новинки</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="trailers">
+				<div class="trailers__container">
+					<div class="trailers__block-header block-header">
+						<div class="block-header__title">
+							<h2>Новые трейлеры</h2>
+						</div>
+						<div class="block-header__content content-block-header">
+							<a href="media.html" class="content-block-header__all _icon-arrow-right all">Все трейлеры</a>
+						</div>
+					</div>
+					<div class="trailers__content content-trailers">
+						<!-- Оболочка слайдера -->
+						<div class="content-trailers__slider swiper">
+							<!-- Движущаяся часть слайдера -->
+							<div class="content-trailers__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="content-trailers__slide slide-content-trailers swiper-slide">
+									<div class="video-about__video-ibg">
+										<div class="video-about__video-inner">
+											<picture>
+												<source srcset="img/trailers-block/01.jpg" type="image/webp">
+												<img class="video-about__video-content" data-src="img/trailers-block/01.jpg" alt="Картинка">
+											</picture>
+											<button data-video-id="hT3-e8K5Q40" class="video-about__video-button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+													<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="slide-content-trailers__bottom slide-trailers-bottom">
+										<div class="slide-trailers-bottom__title-block">
+											<div class="slide-trailers-bottom__title title">
+												<h4>Мулан</h4>
+											</div>
+											<div class="slide-trailers-bottom__socials socials">
+												<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+											</div>
+										</div>
+										<div class="slide-trailers-bottom__ratings rating-item">
+											<div class="rating-item__like">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>3 245</span>
+												</div>
+											</div>
+											<div class="rating-item__dislike">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>420</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-trailers__slide slide-content-trailers swiper-slide">
+									<div class="video-about__video-ibg">
+										<div class="video-about__video-inner">
+											<picture>
+												<source srcset="img/trailers-block/02.jpg" type="image/webp">
+												<img class="video-about__video-content" data-src="img/trailers-block/02.jpg" alt="Картинка">
+											</picture>
+											<button data-video-id="XsXUVWy-Ld8" class="video-about__video-button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+													<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="slide-content-trailers__bottom slide-trailers-bottom">
+										<div class="slide-trailers-bottom__title-block">
+											<div class="slide-trailers-bottom__title title">
+												<h4>Форсаж 9</h4>
+											</div>
+											<div class="slide-trailers-bottom__socials socials">
+												<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+											</div>
+										</div>
+										<div class="slide-trailers-bottom__ratings rating-item">
+											<div class="rating-item__like">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>3 245</span>
+												</div>
+											</div>
+											<div class="rating-item__dislike">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>420</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-trailers__slide slide-content-trailers swiper-slide">
+									<div class="video-about__video-ibg">
+										<div class="video-about__video-inner">
+											<picture>
+												<source srcset="img/trailers-block/03.jpg" type="image/webp">
+												<img class="video-about__video-content" data-src="img/trailers-block/03.jpg" alt="Картинка">
+											</picture>
+											<button data-video-id="kWp3Rv0Ovho" class="video-about__video-button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+													<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="slide-content-trailers__bottom slide-trailers-bottom">
+										<div class="slide-trailers-bottom__title-block">
+											<div class="slide-trailers-bottom__title title">
+												<h4>Чёрная Вдова</h4>
+											</div>
+											<div class="slide-trailers-bottom__socials socials">
+												<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+											</div>
+										</div>
+										<div class="slide-trailers-bottom__ratings rating-item">
+											<div class="rating-item__like">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>3 245</span>
+												</div>
+											</div>
+											<div class="rating-item__dislike">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>420</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-trailers__slide slide-content-trailers swiper-slide">
+									<div class="video-about__video-ibg">
+										<div class="video-about__video-inner">
+											<picture>
+												<source srcset="img/trailers-block/04.jpg" type="image/webp">
+												<img class="video-about__video-content" data-src="img/trailers-block/04.jpg" alt="Картинка">
+											</picture>
+											<button data-video-id="5Rjm8TVa1T0" class="video-about__video-button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+													<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="slide-content-trailers__bottom slide-trailers-bottom">
+										<div class="slide-trailers-bottom__title-block">
+											<div class="slide-trailers-bottom__title title">
+												<h4>Тихое место 2</h4>
+											</div>
+											<div class="slide-trailers-bottom__socials socials">
+												<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+											</div>
+										</div>
+										<div class="slide-trailers-bottom__ratings rating-item">
+											<div class="rating-item__like">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>3 245</span>
+												</div>
+											</div>
+											<div class="rating-item__dislike">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>420</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="content-trailers__slide slide-content-trailers swiper-slide">
+									<div class="video-about__video-ibg">
+										<div class="video-about__video-inner">
+											<picture>
+												<source srcset="img/trailers-block/02.jpg" type="image/webp">
+												<img class="video-about__video-content" data-src="img/trailers-block/02.jpg" alt="Картинка">
+											</picture>
+											<button data-video-id="XsXUVWy-Ld8" class="video-about__video-button">
+												<svg xmlns="http://www.w3.org/2000/svg" width="60" height="69" viewBox="0 0 60 69" fill="none">
+													<path d="M57.0261 31.0389C59.6858 32.5799 59.6858 36.4201 57.0261 37.9611L6.00524 67.5208C3.33857 69.0658 8.24505e-07 67.1416 7.87754e-07 64.0597L8.27623e-08 4.9403C4.60111e-08 1.85842 3.33857 -0.0657506 6.00523 1.47922L57.0261 31.0389Z" fill="white" />
+												</svg>
+											</button>
+										</div>
+									</div>
+									<div class="slide-content-trailers__bottom slide-trailers-bottom">
+										<div class="slide-trailers-bottom__title-block">
+											<div class="slide-trailers-bottom__title title">
+												<h4>Форсаж 9</h4>
+											</div>
+											<div class="slide-trailers-bottom__socials socials">
+												<a href="https://vk.com/" target="_blank" class="slide-trailers-bottom__social _icon-vk"></a>
+												<a href="https://www.instagram.com/" target="_blank" class="slide-trailers-bottom__social _icon-instagram"></a>
+												<a href="https://www.facebook.com/" target="_blank" class="slide-trailers-bottom__social _icon-facebook"></a>
+												<a href="https://twitter.com/i/flow/login" target="_blank" class="slide-trailers-bottom__social _icon-x"></a>
+											</div>
+										</div>
+										<div class="slide-trailers-bottom__ratings rating-item">
+											<div class="rating-item__like">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>3 245</span>
+												</div>
+											</div>
+											<div class="rating-item__dislike">
+												<button type="button" class="item-like _icon-like"></button>
+												<div class="rating-item__quantity">
+													<span>420</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Оболочка слайдера -->
+						<div class="content-trailers__thumbs thumbs-trailers swiper">
+							<!-- Если нужен скроллбар -->
+							<div class="thumbs-trailers__scrollbar swiper-scrollbar"></div>
+							<!-- Движущаяся часть слайдера -->
+							<div class="thumbs-trailers__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="thumbs-trailers__slide thumb-slide swiper-slide">
+									<div class="thumb-slide__image-ibg">
+										<picture><source data-srcset="img/trailers-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/trailers-block/01.jpg" alt="Image"></picture>
+									</div>
+									<a href="movie-card.html" class="thumb-slide__title">
+										<h5>Мулан</h5>
+									</a>
+								</div>
+								<div class="thumbs-trailers__slide thumb-slide swiper-slide">
+									<div class="thumb-slide__image-ibg">
+										<picture><source data-srcset="img/trailers-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/trailers-block/02.jpg" alt="Image"></picture>
+									</div>
+									<a href="movie-card.html" class="thumb-slide__title">
+										<h5>Форсаж 9</h5>
+									</a>
+								</div>
+								<div class="thumbs-trailers__slide thumb-slide swiper-slide">
+									<div class="thumb-slide__image-ibg">
+										<picture><source data-srcset="img/trailers-block/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/trailers-block/03.jpg" alt="Image"></picture>
+									</div>
+									<a href="movie-card.html" class="thumb-slide__title">
+										<h5>Чёрная Вдова</h5>
+									</a>
+								</div>
+								<div class="thumbs-trailers__slide thumb-slide swiper-slide">
+									<div class="thumb-slide__image-ibg">
+										<picture><source data-srcset="img/trailers-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/trailers-block/04.jpg" alt="Image"></picture>
+									</div>
+									<a href="movie-card.html" class="thumb-slide__title">
+										<h5>Тихое место 2</h5>
+									</a>
+								</div>
+								<div class="thumbs-trailers__slide thumb-slide swiper-slide">
+									<div class="thumb-slide__image-ibg">
+										<picture><source data-srcset="img/trailers-block/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/trailers-block/02.jpg" alt="Image"></picture>
+									</div>
+									<a href="movie-card.html" class="thumb-slide__title">
+										<h5>Форсаж 9</h5>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="popular-films">
+				<div data-tabs class="popular-films__container">
+					<div class="popular-films__block-header block-header block-header_decor">
+						<div class="block-header__title">
+							<h2>Популярные фильмы</h2>
+						</div>
+						<div class="block-header__decor"></div>
+						<div class="block-header__content">
+							<div class="content-block-header">
+								<nav data-tabs-titles class="content-block-header__navigation">
+									<button type="button" class="content-block-header__title _tab-active">Все время</button>
+									<button type="button" class="content-block-header__title">2023</button>
+									<button type="button" class="content-block-header__title">2022</button>
+									<button type="button" class="content-block-header__title">2021</button>
+									<button type="button" class="content-block-header__title">2020</button>
+									<button type="button" class="content-block-header__title">2019</button>
+									<button type="button" class="content-block-header__title">2018</button>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div data-tabs-body class="popular-films__body body-popular-films">
+						<div class="body-popular-films__wrapper">
+							<!-- Оболочка слайдера -->
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-films__wrapper">
+							<div class="body-popular-films__slider swiper">
+								<!-- Движущаяся часть слайдера -->
+								<div class="body-popular-films__wrapper swiper-wrapper">
+									<!-- Слайд -->
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/01.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/02.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/03.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+									<div class="body-popular-films__slide swiper-slide">
+										<article class="body-hero__item body-hero__item_middle item-hero card-film">
+											<div class="card-film__labels">
+												<div class="card-film__label">6.70</div>
+											</div>
+											<div class="card-film__wrapper">
+												<div class="card-film__image-block">
+													<a href="movie-card.html" class="card-film__image-ibg">
+														<picture><source data-srcset="img/popular-films/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-films/04.jpg" alt="Image"></picture>
+													</a>
+													<div class="card-film__about">
+														<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+													</div>
+												</div>
+												<a href="movie-card.html" class="card-film__title">
+													<h5>Побег из Претории</h5>
+												</a>
+												<div class="card-film__desc">
+													<p>Триллер</p>
+												</div>
+											</div>
+										</article>
+									</div>
+								</div>
+								<div class="control-body-popular-films controls-sliders">
+									<div class="swiper-pagination"></div>
+									<!-- Если требуется навигация (слева / справа) -->
+									<div class="control__buttons">
+										<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+										<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="popular-actors">
+				<div data-tabs data-tabs-animate="800" class="popular-actors__container">
+					<div class="popular-actors__block-header block-header block-header_column">
+						<div class="block-header__title">
+							<h2>Популярные персоны</h2>
+						</div>
+						<div class="block-header__content">
+							<div class="content-block-header">
+								<nav data-tabs-titles class="content-block-header__navigation">
+									<button type="button" class="content-block-header__title">За год</button>
+									<button type="button" class="content-block-header__title">За месяц</button>
+									<button type="button" class="content-block-header__title _tab-active">За неделю</button>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div data-tabs-body class="popular-actors__body body-popular-actors">
+						<div class="body-popular-actors__wrapper">
+							<div class="body-popular-actors__content">
+								<div class="body-popular-actors__winners winners-popular-actors">
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/03.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">1-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Дэниэл Рэдклифф</a>
+												<div class="content-item-winners__name-en">Daniel Radcliffe</div>
+												<div class="content-item-winners__age">34 года</div>
+											</div>
+										</a>
+									</div>
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/04.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">2-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Жанетт Кронин</a>
+												<div class="content-item-winners__name-en">Jeanette Cronin</div>
+												<div class="content-item-winners__age">53 лет</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="body-popular-actors__other other-popular-actors">
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Тинто Брасс</a>
+											<div class="content-other-actors__name-en">Tinto Brass</div>
+											<div class="content-other-actors__age">87 лет</div>
+										</div>
+										<div class="item-other-actors__order">3-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Джеки Чан</a>
+											<div class="content-other-actors__name-en">Jackie Chan</div>
+											<div class="content-other-actors__age">66 лет</div>
+										</div>
+										<div class="item-other-actors__order">4-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Том Харди</a>
+											<div class="content-other-actors__name-en">Tom Hardy</div>
+											<div class="content-other-actors__age">42 года</div>
+										</div>
+										<div class="item-other-actors__order">5-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Акшай Кумар</a>
+											<div class="content-other-actors__name-en">Akshay Kumar</div>
+											<div class="content-other-actors__age">52 года</div>
+										</div>
+										<div class="item-other-actors__order">6-е место</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-actors__wrapper">
+							<div class="body-popular-actors__content">
+								<div class="body-popular-actors__winners winners-popular-actors">
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/02.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">1-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Джейсон Стэтхем</a>
+												<div class="content-item-winners__name-en">Jason Statham</div>
+												<div class="content-item-winners__age">52 года</div>
+											</div>
+										</a>
+									</div>
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/01.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">2-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Квентин Тарантино</a>
+												<div class="content-item-winners__name-en">Quentin Tarantino</div>
+												<div class="content-item-winners__age">57 лет</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="body-popular-actors__other other-popular-actors">
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Тинто Брасс</a>
+											<div class="content-other-actors__name-en">Tinto Brass</div>
+											<div class="content-other-actors__age">87 лет</div>
+										</div>
+										<div class="item-other-actors__order">3-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Джеки Чан</a>
+											<div class="content-other-actors__name-en">Jackie Chan</div>
+											<div class="content-other-actors__age">66 лет</div>
+										</div>
+										<div class="item-other-actors__order">4-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Том Харди</a>
+											<div class="content-other-actors__name-en">Tom Hardy</div>
+											<div class="content-other-actors__age">42 года</div>
+										</div>
+										<div class="item-other-actors__order">5-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Акшай Кумар</a>
+											<div class="content-other-actors__name-en">Akshay Kumar</div>
+											<div class="content-other-actors__age">52 года</div>
+										</div>
+										<div class="item-other-actors__order">6-е место</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="body-popular-actors__wrapper">
+							<div class="body-popular-actors__content">
+								<div class="body-popular-actors__winners winners-popular-actors">
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/01.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">1-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Квентин Тарантино</a>
+												<div class="content-item-winners__name-en">Quentin Tarantino</div>
+												<div class="content-item-winners__age">57 лет</div>
+											</div>
+										</a>
+									</div>
+									<div class="winners-popular-actors__item item-winners-popular-actors">
+										<a href="actor-card.html" class="item-winners-popular-actors__link">
+											<div class="item-winners-popular-actors__image-ibg">
+												<picture><source data-srcset="img/popular-actors/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/popular-actors/02.jpg" alt="Image"></picture>
+												<div class="item-winners-popular-actors__image-gradient"></div>
+											</div>
+											<div class="item-winners-popular-actors__order">2-е место</div>
+											<div class="item-winners-popular-actors__content content-item-winners">
+												<a href="actor-card.html" class="content-item-winners__name">Джейсон Стэтхем</a>
+												<div class="content-item-winners__name-en">Jason Statham</div>
+												<div class="content-item-winners__age">52 года</div>
+											</div>
+										</a>
+									</div>
+								</div>
+								<div class="body-popular-actors__other other-popular-actors">
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Тинто Брасс</a>
+											<div class="content-other-actors__name-en">Tinto Brass</div>
+											<div class="content-other-actors__age">87 лет</div>
+										</div>
+										<div class="item-other-actors__order">3-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Джеки Чан</a>
+											<div class="content-other-actors__name-en">Jackie Chan</div>
+											<div class="content-other-actors__age">66 лет</div>
+										</div>
+										<div class="item-other-actors__order">4-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Том Харди</a>
+											<div class="content-other-actors__name-en">Tom Hardy</div>
+											<div class="content-other-actors__age">42 года</div>
+										</div>
+										<div class="item-other-actors__order">5-е место</div>
+									</div>
+									<div class="other-popular-actors__item item-other-actors">
+										<div class="item-other-actors__content content-other-actors">
+											<a href="actor-card.html" class="content-other-actors__name">Акшай Кумар</a>
+											<div class="content-other-actors__name-en">Akshay Kumar</div>
+											<div class="content-other-actors__age">52 года</div>
+										</div>
+										<div class="item-other-actors__order">6-е место</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="news">
+				<div class="news__container">
+					<div class="news__block-header block-header">
+						<div class="block-header__title">
+							<h2>Последние новости</h2>
+						</div>
+						<div class="block-header__content">
+							<div class="content-block-header">
+								<a href="news.html" class="content-block-header__all _icon-arrow-right all">Все новости</a>
+							</div>
+						</div>
+					</div>
+					<div class="news__body body-news">
+						<!-- Оболочка слайдера -->
+						<div class="body-news__slider news-slider swiper">
+							<!-- Движущаяся часть слайдера -->
+							<div class="body-news__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="body-news__slide slide-news swiper-slide">
+									<a href="new-1.html" class="slide-news__link">
+										<div class="slide-news__header header-slide-news">
+											<div class="header-slide-news__data">15 Апр 2023</div>
+											<div class="header-slide-news__views _icon-viewing">242</div>
+											<div class="header-slide-news__comments _icon-comment">14</div>
+										</div>
+										<div class="slide-news__image-ibg">
+											<picture><source data-srcset="img/news/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/01.jpg" alt="Image"></picture>
+											<div class="slide-news__decor"></div>
+										</div>
+										<div class="slide-news__content content-slide-news">
+											<div class="content-slide-news__title title-in-card">
+												<h4>Как изменили Соника с последнего анонса</h4>
+											</div>
+											<div class="content-slide-news__desc">
+												<p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="body-news__slide slide-news swiper-slide">
+									<a href="new-1.html" class="slide-news__link">
+										<div class="slide-news__header header-slide-news">
+											<div class="header-slide-news__data">15 Апр 2023</div>
+											<div class="header-slide-news__views _icon-viewing">242</div>
+											<div class="header-slide-news__comments _icon-comment">14</div>
+										</div>
+										<div class="slide-news__image-ibg">
+											<picture><source data-srcset="img/news/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/02.jpg" alt="Image"></picture>
+											<div class="slide-news__decor"></div>
+										</div>
+										<div class="slide-news__content content-slide-news">
+											<div class="content-slide-news__title title-in-card">
+												<h4>Не время умирать. Перенос релиза фильма</h4>
+											</div>
+											<div class="content-slide-news__desc">
+												<p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="body-news__slide slide-news swiper-slide">
+									<a href="new-1.html" class="slide-news__link">
+										<div class="slide-news__header header-slide-news">
+											<div class="header-slide-news__data">15 Апр 2023</div>
+											<div class="header-slide-news__views _icon-viewing">242</div>
+											<div class="header-slide-news__comments _icon-comment">14</div>
+										</div>
+										<div class="slide-news__image-ibg">
+											<picture><source data-srcset="img/news/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/03.jpg" alt="Image"></picture>
+											<div class="slide-news__decor"></div>
+										</div>
+										<div class="slide-news__content content-slide-news">
+											<div class="content-slide-news__title title-in-card">
+												<h4>От этой новости вы будете шокированы до завтра</h4>
+											</div>
+											<div class="content-slide-news__desc">
+												<p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="body-news__slide slide-news swiper-slide">
+									<a href="new-1.html" class="slide-news__link">
+										<div class="slide-news__header header-slide-news">
+											<div class="header-slide-news__data">15 Апр 2023</div>
+											<div class="header-slide-news__views _icon-viewing">242</div>
+											<div class="header-slide-news__comments _icon-comment">14</div>
+										</div>
+										<div class="slide-news__image-ibg">
+											<picture><source data-srcset="img/news/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/04.jpg" alt="Image"></picture>
+											<div class="slide-news__decor"></div>
+										</div>
+										<div class="slide-news__content content-slide-news">
+											<div class="content-slide-news__title title-in-card">
+												<h4>Вот это, конечно, да!</h4>
+											</div>
+											<div class="content-slide-news__desc">
+												<p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="body-news__slide slide-news swiper-slide">
+									<a href="new-1.html" class="slide-news__link">
+										<div class="slide-news__header header-slide-news">
+											<div class="header-slide-news__data">15 Апр 2023</div>
+											<div class="header-slide-news__views _icon-viewing">242</div>
+											<div class="header-slide-news__comments _icon-comment">14</div>
+										</div>
+										<div class="slide-news__image-ibg">
+											<picture><source data-srcset="img/news/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/01.jpg" alt="Image"></picture>
+											<div class="slide-news__decor"></div>
+										</div>
+										<div class="slide-news__content content-slide-news">
+											<div class="content-slide-news__title title-in-card">
+												<h4>Как изменили Соника с последнего анонса</h4>
+											</div>
+											<div class="content-slide-news__desc">
+												<p>Но действия представителей оппозиции в равной степени предоставлены сами себе. В рамках спецификации современных стандартов, стремящиеся вытеснить традиционное производство, нанотехнологии указаны как претенденты на роль ключевых факторов.</p>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="body-news__thumbs news-thumbs swiper">
+							<div class="news-thumbs__wrapper swiper-wrapper">
+								<div class="news-thumbs__slide swiper-slide">
+									<div class="news-thumbs__data">15 Апр 2023</div>
+									<div class="news-thumbs__image-ibg">
+										<picture><source data-srcset="img/news/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/01.jpg" alt="Image"></picture>
+										<div class="news-thumbs__hover">
+											<a href="new-1.html" class="news-thumbs__button button button_all">Читать новость</a>
+										</div>
+									</div>
+									<div class="news-thumbs__title">
+										<h5>Как изменили Соника с последнего анонса</h5>
+									</div>
+								</div>
+								<div class="news-thumbs__slide swiper-slide">
+									<div class="news-thumbs__data">15 Апр 2023</div>
+									<div class="news-thumbs__image-ibg">
+										<picture><source data-srcset="img/news/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/02.jpg" alt="Image"></picture>
+										<div class="news-thumbs__hover">
+											<a href="new-1.html" class="news-thumbs__button button button_all">Читать новость</a>
+										</div>
+									</div>
+									<div class="news-thumbs__title">
+										<h5>Не время умирать. Перенос релиза фильма</h5>
+									</div>
+								</div>
+								<div class="news-thumbs__slide swiper-slide">
+									<div class="news-thumbs__data">15 Апр 2023</div>
+									<div class="news-thumbs__image-ibg">
+										<picture><source data-srcset="img/news/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/03.jpg" alt="Image"></picture>
+										<div class="news-thumbs__hover">
+											<a href="new-1.html" class="news-thumbs__button button button_all">Читать новость</a>
+										</div>
+									</div>
+									<div class="news-thumbs__title">
+										<h5>От этой новости вы будете шокированы до завтра</h5>
+									</div>
+								</div>
+								<div class="news-thumbs__slide swiper-slide">
+									<div class="news-thumbs__data">15 Апр 2023</div>
+									<div class="news-thumbs__image-ibg">
+										<picture><source data-srcset="img/news/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/04.jpg" alt="Image"></picture>
+										<div class="news-thumbs__hover">
+											<a href="new-1.html" class="news-thumbs__button button button_all">Читать новость</a>
+										</div>
+									</div>
+									<div class="news-thumbs__title">
+										<h5>Вот это, конечно, да!</h5>
+									</div>
+								</div>
+								<div class="news-thumbs__slide swiper-slide">
+									<div class="news-thumbs__data">15 Апр 2023</div>
+									<div class="news-thumbs__image-ibg">
+										<picture><source data-srcset="img/news/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/news/01.jpg" alt="Image"></picture>
+										<div class="news-thumbs__hover">
+											<a href="new-1.html" class="news-thumbs__button button button_all">Читать новость</a>
+										</div>
+									</div>
+									<div class="news-thumbs__title">
+										<h5>Как изменили Соника с последнего анонса </h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="new">
+				<div class="new__container">
+					<div class="new__body body-new">
+						<!-- Оболочка слайдера -->
+						<div class="body-new__slider body-new-unregistered-slider swiper">
+							<div class="new__block-header block-header">
+								<div class="block-header__title">
+									<h2>Ожидаемые новинки</h2>
+								</div>
+								<div class="block-header__content block-header__content_new">
+									<div data-da=".body-new-unregistered-slider,479.98" class="control-new controls-sliders">
+										<!-- <div class="control-body-popular-films__fraction fraction-controll">
+												<span class="fraction-controll__current"></span>/<span class="fraction-controll__all"></span>
+											</div> -->
+										<div class="swiper-pagination"></div>
+										<!-- Если требуется навигация (слева / справа) -->
+										<div class="control__buttons">
+											<button type="button" class="control-button control-button_prev swiper-button-prev _icon-arrow-fraction"></button>
+											<button type="button" class="control-button control-button_next swiper-button-next _icon-arrow-fraction"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Движущаяся часть слайдера -->
+							<div class="body-new__wrapper swiper-wrapper">
+								<!-- Слайд -->
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Побег из Претории</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>14 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Прощай</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>14 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Дружить по-русски!</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>21 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Приди ко мне</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>21 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Побег из Претории</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>14 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/02.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Прощай</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>14 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/03.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Дружить по-русски!</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>21 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/new/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/new/04.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Приди ко мне</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>21 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="body-new__slide slide-body-new swiper-slide">
+									<article class="slide-body-new__item body-hero__item_middle item-hero card-film">
+										<div class="card-film__wrapper">
+											<div class="card-film__image-block">
+												<a href="movie-card.html" class="card-film__image-ibg">
+													<picture><source data-srcset="img/hero-block/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/01.jpg" alt="Image"></picture>
+												</a>
+												<div class="card-film__about">
+													<a href="movie-card.html" class="card-film__btn">Карточка фильма</a>
+												</div>
+											</div>
+											<a href="movie-card.html" class="card-film__title">
+												<h5>Побег из Претории</h5>
+											</a>
+											<div class="card-film__desc">
+												<p>14 мая 2023 в России</p>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="box-office">
+				<div data-tabs data-tabs-animate="800" class="box-office__container">
+					<div class="box-office__block-header block-header block-header_decor">
+						<div class="block-header__title-block">
+							<div class="block-header__title">
+								<h2>Кассовые сборы</h2>
+							</div>
+							<div class="block-header__data">13 марта — 15 марта</div>
+						</div>
+						<div class="block-header__decor"></div>
+						<div class="block-header__content">
+							<div class="content-block-header">
+								<nav data-tabs-titles class="content-block-header__navigation">
+									<button type="button" class="content-block-header__title">Россия</button>
+									<button type="button" class="content-block-header__title _tab-active">Весь мир</button>
+									<button type="button" class="content-block-header__title">США и Канада</button>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div data-tabs-body class="box-office__body body-box-office">
+						<div class="body-box-office__wrapper">
+							<div class="body-box-office__items">
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>1. Джентльмены</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$11.8 млн</div>
+											<div class="content-item-box-office__profit-all">$78.7 млн за 11 недель</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/02.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>2. Вперёд</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$6.8 млн</div>
+											<div class="content-item-box-office__profit-all">$41.4 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/03.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>3. Человек-невидимка</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$6.2 млн</div>
+											<div class="content-item-box-office__profit-all">$58.3 млн за 3 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/01.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>4. Бладшот</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$3.4 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>5. Соник в кино</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$2.9 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-box-office__wrapper">
+							<div class="body-box-office__items">
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/01.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>1. Бладшот</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$13 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/02.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>2. Вперёд</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$6.8 млн</div>
+											<div class="content-item-box-office__profit-all">$41.4 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/03.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>3. Человек-невидимка</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$6.2 млн</div>
+											<div class="content-item-box-office__profit-all">$58.3 млн за 3 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>4. Соник в кино</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$2.9 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>5. Джентльмены</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$1.8 млн</div>
+											<div class="content-item-box-office__profit-all">$78.7 млн за 11 недель</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+						<div class="body-box-office__wrapper">
+							<div class="body-box-office__items">
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/02.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>1. Вперёд</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$16.8 млн</div>
+											<div class="content-item-box-office__profit-all">$41.4 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/hero-block/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/hero-block/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>2. Джентльмены</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$11.8 млн</div>
+											<div class="content-item-box-office__profit-all">$78.7 млн за 11 недель</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/03.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>3. Человек-невидимка</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$6.2 млн</div>
+											<div class="content-item-box-office__profit-all">$58.3 млн за 3 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/04.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>4. Соник в кино</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$2.9 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+								<article class="body-box-office__item item-box-office">
+									<a href="movie-card.html" class="item-box-office__image-ibg">
+										<picture><source data-srcset="img/box-office/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/box-office/01.jpg" alt="Image"></picture>
+									</a>
+									<div class="item-box-office__content content-item-box-office">
+										<a href="movie-card.html" class="content-item-box-office__title title-in-card">
+											<h5>5. Бладшот</h5>
+										</a>
+										<div class="content-item-box-office__profits">
+											<div class="content-item-box-office__profit-current">$1.4 млн</div>
+											<div class="content-item-box-office__profit-all">$15.1 млн за 4 недели</div>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<section class="subscribe">
+				<div class="subscribe__body body-subscribe">
+					<div class="body-subscribe__logo">
+						<img data-src="img/logo2.svg" alt="Logo">
+					</div>
+					<form action="#" class="subscribe__form form-subscribe">
+						<div class="form-subscribe__content">
+							<div class="form-subscribe__title title">
+								<h3>Подпишитесь на E-mail рассылку</h3>
+							</div>
+							<div class="form-subscribe__text">
+								<p>Если хотиет быть в курсе последних новостей и новинок кино - заполните форму ниже и оформите бесплатную E-mail рассылку!</p>
+							</div>
+						</div>
+						<div class="form-subscribe__request request-form-subscribe">
+							<input data-required="email" autocomplete="off" type="text" name="subscribe" data-error="Введите правильный E-mail" placeholder="Введите свой E-mail адрес" class="input form-input">
+							<button type="submit" class="request-form-subscribe__button button">Подписаться</button>
+						</div>
+						<div class="form-subscribe__privacy">
+							<div class="form__group">
+								<label for="formAgreement" class="custom-label">
+									<input checked data-required id="formAgreement" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<div>Соглашаюсь на условия <a href="#" class="privacy-link">политики конфиденциальности</a></div>
+								</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__socials socials">
+						<a href="https://vk.com/" target="_blank" class="body-footer__social _icon-vk"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="body-footer__social _icon-instagram"></a>
+						<a href="https://www.facebook.com/" target="_blank" class="body-footer__social _icon-facebook"></a>
+						<a href="https://twitter.com/i/flow/login" target="_blank" class="body-footer__social _icon-x"></a>
+					</div>
+					<div class="footer__menu menu-footer">
+						<nav class="menu-footer__body">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Афиша</a></li>
+								<li class="menu-footer__item"><a href="news.html" class="menu-footer__link">Новости</a></li>
+								<li class="menu-footer__item"><a href="actor-card.html" class="menu-footer__link">Персоны</a></li>
+								<li class="menu-footer__item"><a href="schedule.html" class="menu-footer__link">Каталог фильмов</a></li>
+								<li class="menu-footer__item"><a href="search-results.html" class="menu-footer__link">Рейтинги</a></li>
+								<li class="menu-footer__item"><a href="feedback.html" class="menu-footer__link">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer__rights">2020 © Kinoarea. Все права защищены</div>
+					<a href="#" class="footer__policy">Политика конфиденциальности</a>
+				</div>
+			</div>
+		</footer>
+		<button type="button" class="button-up _hide _icon-arrow-long-top"></button>
+	</div>
+	<div id="popup-login" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Войти</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="nameLoginFormLogin" type="text" name="login" placeholder="Логин, почта или телефон" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Неверный пароль" id="namePasswordFormLogin" type="password" name="password" placeholder="Ваш пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Войти</button>
+							<a href="#" data-popup="#popup-register" class="body-popup__button-transparent button">Зарегистрироваться</a>
+						</div>
+						<a href="#" data-popup="#popup-recovery" class="body-popup__recovery">Восстановить пароль</a>
+						<div class="body-popup__socials socials">
+							<a href="" target="_blank" class="header__social _icon-vk"></a>
+							<a href="" target="_blank" class="header__social _icon-instagram"></a>
+							<a href="" target="_blank" class="header__social _icon-facebook"></a>
+							<a href="" target="_blank" class="header__social _icon-x"></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div id="popup-register" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Зарегистрироваться</h2>
+					</div>
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group">
+								<input data-required data-error="Введите имя" id="nameFormRegister" type="text" name="name" placeholder="Имя" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите фамилию" id="surnameFormRegister" type="text" name="surname" placeholder="Фамилия" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите логин" id="loginFormRegister" type="text" name="login" placeholder="Придумайте логин" class="form__input input">
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordFormRegister" type="password" name="password" placeholder="Придумайте пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="passwordRepitFormRegister" type="password" name="password" placeholder="Повторите пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group">
+								<input data-required data-error="Введите номер телефона" id="telFormRegister" type="tel" name="telephone" placeholder="Номер телефона" class="form__input input">
+							</div>
+							<div class="form__group">
+								<input data-required="email" data-error="Неправильная электронная почта" id="emailFormRegister" type="text" name="email" placeholder="Электронная почта" class="form__input input">
+							</div>
+						</div>
+						<div class="body-popup__consent">
+							<div class="form__group">
+								<label for="formAgreementRegistrationPolicy" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPolicy" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на условия <a href="#">политики конфиденциальности</a></span>
+								</label>
+							</div>
+							<div class="form__group">
+								<label for="formAgreementRegistrationPersonalData" class="custom-label">
+									<input checked data-required id="formAgreementRegistrationPersonalData" type="checkbox" name="agreement" class="real-checkbox req">
+									<span class="custom-checkbox-simple"></span>
+									<span class="signature">Соглашаюсь на обработку персональных данных</span>
+								</label>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button-login button button_submit">Зарегистрироваться</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+					<form data-dev action="#" data-popup-message="#popup-recovery-only-password" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="body-popup__line-top">
+								<div class="form__group">
+									<input data-required data-error="Неверный номер теелфона или почта" id="loginFormRecovery" type="text" name="login" placeholder="Почта или номер телефона" class="form__input input">
+								</div>
+							</div>
+							<div class="body-popup__line-bottom">
+								<button type="submit" class="body-popup__button button button_blue">Отправить</button>
+								<div class="form__group">
+									<input data-required data-error="Неверный код" id="codeFormRecovery" type="text" name="confirmation code" placeholder="Полученный код" class="form__input input">
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Далее</button>
+						</div>
+						<a href="#" class="body-popup__recovery"></a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-recovery-only-password" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Восстановить пароль</h2>
+					</div>
+
+
+					<form action="#" class="body-popup__form form">
+						<div class="body-popup__inputs">
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecovery" type="password" name="recovery-only-password" placeholder="Придумайте новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="form__group input-viewpass">
+								<input data-required-password data-required data-error="Пароли не совпадают или слишком простые" id="newPasswordFormRecoveryСonfirm" type="password" name="recovery-only-password" placeholder="Повторите новый пароль" class="form__input input">
+								<div data-viewpass class="form__viewpass">
+									<svg data-viewpass-open>
+										<use xlink:href="img/icons/icons.svg#eyeOpen"></use>
+									</svg>
+									<svg hidden data-viewpass-lock>
+										<use xlink:href="img/icons/icons.svg#eyeLock"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__title title-popup">
+						<h2>Жалоба</h2>
+					</div>
+					<form action="#" data-dev data-popup-message="#popup-complaint-message" class="body-popup__form form">
+						<div class="body-popup__textarea">
+							<div class="form__field-counter">
+								<div class="form__group">
+									<textarea data-required data-error="Введите сообщение" name="message" id="formComplaint" maxlength="100" class="form__input txt-item" placeholder="Кратко опишите суть проблемы"></textarea>
+								</div>
+								<div class="form-group-counter">Осталось <span></span> символов</div>
+							</div>
+
+						</div>
+						<div class="body-popup__buttons">
+							<button type="submit" class="body-popup__button button button_submit">Готово!</button>
+						</div>
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="popup-complaint-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<img src="img/close.svg" alt="Close-button">
+				</button>
+				<div class="popup__body body-popup">
+					<div class="body-popup__message">
+						<p>
+							Спасибо, что помогаете нам делать платформу лучше!
+						</p>
+						<p>
+							Мы обязательно примем необходимые меры в отношении нарушителя.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240114173932"></script>
+</body>
+
+</html>

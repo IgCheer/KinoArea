@@ -1,0 +1,242 @@
+{
+    "blocks": {
+      "block1": {
+        "items": [
+          {
+            "id": 1,
+            "image": "img/media-block/trailers/01.jpg",
+            "videoId": "Ry55NaOsA9Y",
+            "title": "<h5>Отель у озера</h5>",
+            "date": "24 Апр 2023",
+            "views": "97",
+            "duration": "01:24"
+          },
+          {
+            "id":2,
+            "image":"img/media-block/trailers/02.jpg",
+            "videoId":"xi8kc0iK6Ho",
+            "title": "<h5>Тень звезды</h5>",
+            "date":"24 Апр 2023",
+            "views": "85",
+            "duration": "02:15"
+
+        },
+        {
+            "id":3,
+            "image":"img/media-block/trailers/03.jpg",
+            "videoId":"mQJmNlSTOIE",
+            "title": "<h5>Закрытый сезон</h5>",
+            "date":"24 Апр 2023",
+            "views": "42",
+            "duration": "01:59"
+
+        },
+        {
+            "id":4,
+            "image":"img/media-block/trailers/04.jpg",
+            "videoId":"BC9Kk8Np9-Y",
+            "title": "<h5>All Day and a Night</h5>",
+            "date":"24 Апр 2023",
+            "views": "67",
+            "duration": "02:08"
+
+        },
+        {
+            "id":5,
+            "image":"img/media-block/trailers/05.jpg",
+            "videoId":"HQBK3MvfLSo",
+            "title": "<h5>Загрузка</h5>",
+            "date":"24 Апр 2023",
+            "views": "429",
+            "duration": "02:10"
+
+        },
+        {
+            "id":6,
+            "image":"img/media-block/trailers/06.jpg",
+            "videoId":"UZG73WV45B4",
+            "title": "<h5>По правде говоря</h5>",
+            "date":"24 Апр 2023",
+            "views": "182",
+            "duration": "02:25"
+
+        },
+        {
+            "id":7,
+            "image":"img/media-block/trailers/05.jpg",
+            "videoId":"HQBK3MvfLSo",
+            "title": "<h5>Загрузка</h5>",
+            "date":"24 Апр 2023",
+            "views": "429",
+            "duration": "02:10"
+
+        }
+        ],
+        "hasMore": true
+      },
+      "block2": {
+        "items": [
+          {
+            "id": 1,
+            "image": "img/media-block/posters/01.jpg",
+            "preview": "img/media-block/posters/01.jpg"
+          },
+          {
+            "id": 2,
+            "image": "img/media-block/posters/02.jpg",
+            "preview": "img/media-block/posters/02.jpg"
+          },
+          {
+            "id": 3,
+            "image": "img/media-block/posters/03.jpg",
+            "preview": "img/media-block/posters/03.jpg"
+          },
+          {
+            "id": 4,
+            "image": "img/media-block/posters/04.jpg",
+            "preview": "img/media-block/posters/04.jpg"
+          },
+          {
+            "id": 5,
+            "image": "img/media-block/posters/05.jpg",
+            "preview": "img/media-block/posters/05.jpg"
+          },
+          {
+            "id": 6,
+            "image": "img/media-block/posters/06.jpg",
+            "preview": "img/media-block/posters/06.jpg"
+          },
+          {
+            "id": 7,
+            "image": "img/media-block/posters/07.jpg",
+            "preview": "img/media-block/posters/07.jpg"
+          },
+          {
+            "id": 8,
+            "image": "img/media-block/posters/08.jpg",
+            "preview": "img/media-block/posters/08.jpg"
+          },
+          {
+            "id": 9,
+            "image": "img/media-block/posters/09.jpg",
+            "preview": "img/media-block/posters/09.jpg"
+          },
+          {
+            "id": 10,
+            "image": "img/media-block/posters/10.jpg",
+            "preview": "img/media-block/posters/10.jpg"
+          },
+          {
+            "id": 11,
+            "image": "img/media-block/posters/11.jpg",
+            "preview": "img/media-block/posters/11.jpg"
+          },
+          {
+            "id": 12,
+            "image": "img/media-block/posters/12.jpg",
+            "preview": "img/media-block/posters/12.jpg"
+          },
+          {
+            "id": 13,
+            "image": "img/media-block/posters/13.jpg",
+            "preview": "img/media-block/posters/13.jpg"
+          },
+          {
+            "id": 14,
+            "image": "img/media-block/posters/14.jpg",
+            "preview": "img/media-block/posters/14.jpg"
+          },
+          {
+            "id": 15,
+            "image": "img/media-block/posters/15.jpg",
+            "preview": "img/media-block/posters/15.jpg"
+          },
+          {
+            "id": 16,
+            "image": "img/media-block/posters/16.jpg",
+            "preview": "img/media-block/posters/16.jpg"
+          }
+        ],
+        "hasMore": true
+      },
+
+      "block3": {
+        "items": [
+            {
+                "id": 1,
+                "image": "img/media-block/frames/01.jpg",
+                "url": "#",
+                "quantity": "+41",
+                "name":"Побег из Шоушенка"
+            },
+            {
+                "id": 2,
+                "image": "img/media-block/frames/02.jpg",
+                "url": "#",
+                "quantity": "+62",
+                "name":"Зеленая миля"
+            },
+            {
+                "id": 3,
+                "image": "img/media-block/frames/03.jpg",
+                "url": "#",
+                "quantity": "+25",
+                "name":"Форрест Гамп"
+            },
+            {
+                "id": 4,
+                "image": "img/media-block/frames/04.jpg",
+                "url": "#",
+                "quantity": "+93",
+                "name":"Список Шиндлера"
+            },
+            {
+                "id": 5,
+                "image": "img/media-block/frames/05.jpg",
+                "url": "#",
+                "quantity": "+89",
+                "name":"1+1"
+            },
+            {
+                "id": 6,
+                "image": "img/media-block/frames/06.jpg",
+                "url": "#",
+                "quantity": "+31",
+                "name":"Начало"
+            },
+            {
+                "id": 7,
+                "image": "img/media-block/frames/07.jpg",
+                "url": "#",
+                "quantity": "+54",
+                "name":"Леон"
+            },
+            {
+                "id": 8,
+                "image": "img/media-block/frames/08.jpg",
+                "url": "#",
+                "quantity": "+48",
+                "name":"Бойцовский клуб"
+            },
+            {
+                "id": 9,
+                "image": "img/media-block/frames/09.jpg",
+                "url": "#",
+                "quantity": "+72",
+                "name":"Жизнь прекрасна"
+            }
+        ],
+        "hasMore": true
+        }
+    }
+}
+  
+
+
+
+
+
+
+
+
+
